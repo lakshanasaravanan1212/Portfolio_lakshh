@@ -1,0 +1,17 @@
+{
+  "name": "nikyn-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio for Nikyn V S",
+  "scripts": {
+    "dev": "concurrently \"npm run dev --prefix frontend\" \"npm start --prefix backend\"",
+    "frontend": "npm run dev --prefix frontend",
+    "backend": "npm start --prefix backend",
+    "install-all": "npm install --cache ./.npm-cache && npm install --cache ./frontend/.npm-cache --prefix frontend && npm install --cache ./backend/.npm-cache --prefix backend"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "nodemailer": "^6.9.14"
+  }
+}

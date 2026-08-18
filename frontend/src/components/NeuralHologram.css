@@ -1,0 +1,101 @@
+.hologram-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.hologram-canvas {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 5;
+  display: block;
+}
+
+.character-rim {
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  z-index: 1;
+  background: radial-gradient(circle, rgba(34, 211, 238, 0.15) 0%, rgba(20, 184, 166, 0.05) 50%, transparent 70%);
+  filter: blur(40px);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  animation: hologramPulse 6s ease-in-out infinite alternate;
+}
+
+@keyframes hologramPulse {
+  0% { transform: translate(-50%, -50%) scale(0.9); opacity: 0.6; }
+  100% { transform: translate(-50%, -50%) scale(1.15); opacity: 0.95; }
+}
+
+.hologram-grid-floor {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  transform: translateX(-50%) rotateX(75deg);
+  width: 360px;
+  height: 360px;
+  background-image: 
+    linear-gradient(rgba(94, 234, 212, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(94, 234, 212, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+  border-radius: 50%;
+  mask-image: radial-gradient(circle, black 30%, transparent 70%);
+  -webkit-mask-image: radial-gradient(circle, black 30%, transparent 70%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.hologram-status-badge {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(10, 14, 23, 0.75);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+  color: var(--accentColor);
+  white-space: nowrap;
+}
+
+.live-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #22d3ee;
+  box-shadow: 0 0 8px #22d3ee;
+  animation: dotBlink 1.5s infinite;
+}
+
+@keyframes dotBlink {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.3; transform: scale(0.7); }
+}
+
+@media (max-width: 900px) {
+  .hologram-wrapper {
+    min-height: 380px;
+  }
+  .character-rim {
+    width: 280px;
+    height: 280px;
+  }
+}

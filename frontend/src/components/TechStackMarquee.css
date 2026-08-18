@@ -1,0 +1,159 @@
+.tech-section {
+  padding: 100px 0;
+}
+
+.tech-header {
+  margin-bottom: 40px;
+}
+
+/* Category Filter Tabs */
+.tech-filter-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 36px;
+}
+
+.tech-tab-btn {
+  padding: 8px 18px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--textSecondary);
+  transition: all 0.25s ease;
+}
+
+.tech-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+}
+
+.tech-tab-btn.active {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.2);
+}
+
+/* Tech Chips Grid */
+.tech-chips-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 16px;
+  margin-bottom: 60px;
+}
+
+.tech-card {
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  overflow: hidden;
+}
+
+.tech-card-icon {
+  font-size: 26px;
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.tech-card-name {
+  font-size: 15px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2px;
+}
+
+.tech-card-level {
+  font-size: 12px;
+  color: var(--textMuted);
+  text-transform: capitalize;
+}
+
+/* Marquee Rows */
+.marquee-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  overflow: hidden;
+  position: relative;
+  padding: 20px 0;
+  mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0%, black 10%, black 90%, transparent 100%);
+}
+
+.marquee-row {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 14px;
+  width: max-content;
+}
+
+.marquee-left .marquee-content {
+  animation: marqueeLeft 35s linear infinite;
+}
+
+.marquee-right .marquee-content {
+  animation: marqueeRight 38s linear infinite;
+}
+
+.marquee-row:hover .marquee-content {
+  animation-play-state: paused;
+}
+
+@keyframes marqueeLeft {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@keyframes marqueeRight {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+
+.marquee-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 20px;
+  background: rgba(14, 23, 38, 0.6);
+  border: 1px solid rgba(94, 234, 212, 0.16);
+  border-radius: 30px;
+  color: var(--textSecondary);
+  font-size: 13.5px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+.marquee-chip:hover {
+  background: rgba(94, 234, 212, 0.12);
+  border-color: var(--accentColor);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 0 15px rgba(94, 234, 212, 0.2);
+}
+
+.chip-icon {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  .tech-chips-grid {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  }
+}

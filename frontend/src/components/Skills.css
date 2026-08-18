@@ -1,0 +1,80 @@
+.skills-section {
+  padding: 5rem 0;
+  position: relative;
+}
+
+.skills-board {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 35px;
+  margin-top: 2rem;
+}
+
+.skills-sheet {
+  background: var(--sticky-bg-1);
+  padding: 2.2rem 1.8rem;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.05);
+  position: relative;
+  transition: var(--transition-smooth);
+  color: #2b2a27 !important; /* Keep it readable */
+  transform: rotate(-1deg);
+}
+
+.skills-sheet.blue-note {
+  background: var(--sticky-bg-3);
+  transform: rotate(1deg);
+}
+
+.skills-sheet.green-note {
+  background: var(--sticky-bg-2);
+  transform: rotate(-0.5deg);
+}
+
+.skills-sheet:hover {
+  transform: translateY(-5px) rotate(0deg) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.12);
+}
+
+.sheet-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 1.2rem;
+  border-bottom: 1px dashed rgba(0,0,0,0.15);
+  padding-bottom: 0.5rem;
+}
+
+.sheet-icon {
+  display: flex;
+  align-items: center;
+  color: #555;
+}
+
+.sheet-header h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #2b2a27;
+}
+
+.skills-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.skill-item {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: #333;
+}
+
+.checkmark {
+  color: var(--pencil-blue);
+  font-weight: bold;
+}

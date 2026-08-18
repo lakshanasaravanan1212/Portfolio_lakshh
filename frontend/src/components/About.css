@@ -1,0 +1,74 @@
+.about-section {
+  padding: 100px 0;
+}
+
+.about-header {
+  margin-bottom: 60px;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.about-card {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.about-icon-emoji {
+  font-size: 28px;
+  width: 52px;
+  height: 52px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(94, 234, 212, 0.08);
+  border: 1px solid rgba(94, 234, 212, 0.2);
+  border-radius: 12px;
+}
+
+.about-tag {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  color: var(--accentColor);
+  padding: 4px 10px;
+  background: rgba(94, 234, 212, 0.06);
+  border: 1px solid rgba(94, 234, 212, 0.15);
+  border-radius: 20px;
+}
+
+.about-card-title {
+  font-size: 21px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 12px;
+  letter-spacing: -0.01em;
+}
+
+.about-card-desc {
+  font-size: 15px;
+  line-height: 1.75;
+  color: var(--textSecondary);
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .about-card {
+    padding: 28px 24px;
+  }
+}

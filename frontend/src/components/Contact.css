@@ -1,0 +1,190 @@
+.contact-section {
+  padding: 100px 0 60px;
+}
+
+.contact-header {
+  margin-bottom: 50px;
+}
+
+.contact-giant-title {
+  font-size: clamp(52px, 8vw, 96px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.contact-flex-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 1.1fr;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.contact-col-heading {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accentColor);
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+/* Email & Phone */
+.contact-link-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.contact-main-link {
+  font-size: clamp(18px, 2.2vw, 24px);
+  font-weight: 600;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 2px;
+  transition: all 0.2s ease;
+}
+
+.contact-main-link:hover {
+  color: var(--accentColor);
+  border-color: var(--accentColor);
+}
+
+.btn-copy-email {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  color: var(--textSecondary);
+  transition: all 0.2s ease;
+}
+
+.btn-copy-email:hover {
+  background: rgba(94, 234, 212, 0.15);
+  border-color: var(--accentColor);
+  color: var(--accentColor);
+}
+
+.contact-phone-row,
+.contact-location-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14.5px;
+  color: var(--textSecondary);
+  margin-bottom: 10px;
+}
+
+.contact-sub-icon {
+  color: var(--accentColor);
+}
+
+.contact-sub-link:hover {
+  color: var(--accentColor);
+}
+
+/* Social List */
+.contact-social-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-social-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 18px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  color: var(--textSecondary);
+  transition: all 0.25s ease;
+}
+
+.social-item-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.social-item-arrow {
+  opacity: 0.5;
+  transition: all 0.2s ease;
+}
+
+.contact-social-item:hover {
+  background: rgba(94, 234, 212, 0.1);
+  border-color: rgba(94, 234, 212, 0.3);
+  color: #ffffff;
+  transform: translateX(4px);
+}
+
+.contact-social-item:hover .social-item-arrow {
+  opacity: 1;
+  transform: translate(2px, -2px);
+  color: var(--accentColor);
+}
+
+/* Status Card */
+.contact-status-card {
+  padding: 24px;
+}
+
+.live-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #4ade80;
+  padding: 4px 12px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.contact-status-p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--textSecondary);
+  margin-bottom: 20px;
+}
+
+.btn-hire-me {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  background: var(--accentColor);
+  color: #050810;
+  border-radius: 24px;
+  font-size: 13.5px;
+  font-weight: 600;
+  transition: all 0.25s ease;
+  width: fit-content;
+}
+
+.btn-hire-me:hover {
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 960px) {
+  .contact-flex-grid {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+}

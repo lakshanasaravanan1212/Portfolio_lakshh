@@ -1,0 +1,136 @@
+.cert-section {
+  padding: 100px 0;
+}
+
+.cert-header {
+  margin-bottom: 50px;
+}
+
+/* Metrics Row */
+.cert-metrics-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 50px;
+}
+
+.cert-metric-card {
+  padding: 32px 28px;
+  text-align: center;
+}
+
+.metric-giant-number {
+  display: block;
+  font-size: clamp(38px, 5vw, 54px);
+  font-weight: 700;
+  color: var(--accentColor);
+  font-family: 'Space Grotesk', sans-serif;
+  line-height: 1;
+  margin-bottom: 12px;
+  text-shadow: 0 0 25px rgba(94, 234, 212, 0.4);
+}
+
+.metric-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.metric-desc {
+  font-size: 13.5px;
+  line-height: 1.6;
+  color: var(--textSecondary);
+}
+
+/* Certifications Cards */
+.cert-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
+}
+
+.cert-card {
+  padding: 36px 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cert-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.cert-icon-box {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(94, 234, 212, 0.1);
+  border: 1px solid rgba(94, 234, 212, 0.25);
+  border-radius: 12px;
+  color: var(--accentColor);
+}
+
+.cert-badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  background: rgba(34, 197, 94, 0.1);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+  color: #4ade80;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.cert-card-title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.cert-issuer {
+  font-size: 13px;
+  color: var(--accentColor);
+  font-weight: 500;
+  margin-bottom: 14px;
+  display: block;
+}
+
+.cert-desc {
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--textSecondary);
+  margin-bottom: 24px;
+  flex-grow: 1;
+}
+
+.cert-skills-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.cert-skill-tag {
+  font-size: 12px;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 3px 10px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+}
+
+@media (max-width: 900px) {
+  .cert-metrics-row,
+  .cert-cards-grid {
+    grid-template-columns: 1fr;
+  }
+}
