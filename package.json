@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix frontend\" \"npm start --prefix backend\"",
     "build": "npm run build --prefix frontend",
+    "deploy": "npm run build --prefix frontend && git add -f frontend/dist && git commit -m 'Deploy build' --allow-empty && git push origin $(git subtree split --prefix frontend/dist main):refs/heads/gh-pages --force",
     "frontend": "npm run dev --prefix frontend",
     "backend": "npm start --prefix backend",
     "install-all": "npm install --cache ./.npm-cache && npm install --cache ./frontend/.npm-cache --prefix frontend && npm install --cache ./backend/.npm-cache --prefix backend"
