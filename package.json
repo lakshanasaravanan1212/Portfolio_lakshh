@@ -4,6 +4,7 @@
   "description": "Full-stack portfolio for Nikyn V S",
   "scripts": {
     "dev": "concurrently \"npm run dev --prefix frontend\" \"npm start --prefix backend\"",
+    "build": "npm run build --prefix frontend",
     "frontend": "npm run dev --prefix frontend",
     "backend": "npm start --prefix backend",
     "install-all": "npm install --cache ./.npm-cache && npm install --cache ./frontend/.npm-cache --prefix frontend && npm install --cache ./backend/.npm-cache --prefix backend"
