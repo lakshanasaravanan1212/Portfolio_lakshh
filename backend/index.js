@@ -15,17 +15,15 @@ app.use(helmet());
 // Sample Portfolio Data Endpoint
 app.get('/api/portfolio-data', (req, res) => {
   res.json({
-    name: "Nikyn V S",
-    title: "Generative AI & Machine Learning Engineer",
-    summary: "Solutions-driven Generative AI and Machine Learning Engineer specializing in architecting scalable Retrieval-Augmented Generation (RAG) pipelines, autonomous agents, and NLP applications.",
+    name: "Lakshana S",
+    title: "UI/UX Designer",
+    summary: "Solutions-driven UI/UX Designer specializing in creating seamless and intuitive user experiences.",
     socials: {
-      github: "https://github.com/Nikynsuresh",
-      linkedin: "https://linkedin.com/in/nikyn-suresh",
-      leetcode: "https://leetcode.com/u/nikyn_suresh"
+      github: "https://github.com/lakshanasaravanan1212",
+      linkedin: "https://linkedin.com/in/lakshana-s-267974300"
     }
   });
 });
-
 // Contact Form POST Endpoint
 app.post('/api/contact', async (req, res) => {
   const { name, email, subject, message } = req.body;
@@ -39,9 +37,9 @@ app.post('/api/contact', async (req, res) => {
 
   if (!emailUser || !emailPass) {
     console.log(`[SMTP Not Configured] Simulating message from ${name} (${email}): ${subject} - ${message}`);
-    return res.json({ 
-      success: true, 
-      message: "Thank you for reaching out! (Local simulation mode - configure EMAIL_USER and EMAIL_PASS to send real emails)" 
+    return res.json({
+      success: true,
+      message: "Thank you for reaching out! (Local simulation mode - configure EMAIL_USER and EMAIL_PASS to send real emails)"
     });
   }
 
@@ -62,10 +60,10 @@ app.post('/api/contact', async (req, res) => {
     to: process.env.EMAIL_RECEIVER || emailUser,
     subject: `New Portfolio Message: ${subject}`,
     text: `You received a new message from your portfolio contact form:\n\n` +
-          `Name: ${name}\n` +
-          `Email: ${email}\n` +
-          `Subject: ${subject}\n\n` +
-          `Message:\n${message}`
+      `Name: ${name}\n` +
+      `Email: ${email}\n` +
+      `Subject: ${subject}\n\n` +
+      `Message:\n${message}`
   };
 
   try {
