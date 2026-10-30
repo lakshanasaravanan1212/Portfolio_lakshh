@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Mail, Phone, MapPin, ArrowUpRight, Github, Linkedin, Code2, Copy, Check, Send } from 'lucide-react';
+import { Mail, Phone, MapPin, ArrowUpRight, Linkedin, Copy, Check, Send, Palette, FileText } from 'lucide-react';
 import './Contact.css';
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
 
   const copyEmail = () => {
-    navigator.clipboard.writeText('s.nikyn005@gmail.com');
+    navigator.clipboard.writeText('lakshanasaravanan1212@gmail.com');
     setCopied(true);
     setTimeout(() => setCopied(false), 2500);
   };
@@ -37,11 +37,11 @@ const Contact = () => {
           <h4 className="contact-col-heading">Direct Inquiries</h4>
           <div className="contact-link-row">
             <a
-              href="mailto:s.nikyn005@gmail.com"
+              href="mailto:lakshanasaravanan1212@gmail.com"
               className="contact-main-link"
               data-cursor="pointer"
             >
-              s.nikyn005@gmail.com
+              lakshanasaravanan1212@gmail.com
             </a>
             <button
               onClick={copyEmail}
@@ -55,8 +55,8 @@ const Contact = () => {
 
           <div className="contact-phone-row">
             <Phone size={16} className="contact-sub-icon" />
-            <a href="tel:+919677872799" className="contact-sub-link">
-              +91 96778 72799
+            <a href="tel:+919043270978" className="contact-sub-link">
+              +91 90432 70978
             </a>
           </div>
 
@@ -66,7 +66,7 @@ const Contact = () => {
           </div>
         </motion.div>
 
-        {/* Social Profiles Column (amarnath.dev style) */}
+        {/* Social Profiles Column */}
         <motion.div
           initial={{ opacity: 0, y: 25 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -74,24 +74,10 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="contact-col"
         >
-          <h4 className="contact-col-heading">Network & Code</h4>
+          <h4 className="contact-col-heading">Professional Links</h4>
           <div className="contact-social-list">
             <a
-              href="https://github.com/Nikynsuresh"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="contact-social-item"
-              data-cursor="pointer"
-            >
-              <div className="social-item-left">
-                <Github size={18} />
-                <span>GitHub</span>
-              </div>
-              <ArrowUpRight size={18} className="social-item-arrow" />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/nikyn-suresh-20a9413bb/"
+              href="https://linkedin.com/in/lakshh12"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-social-item"
@@ -99,21 +85,33 @@ const Contact = () => {
             >
               <div className="social-item-left">
                 <Linkedin size={18} />
-                <span>LinkedIn</span>
+                <span>LinkedIn Profile</span>
               </div>
               <ArrowUpRight size={18} className="social-item-arrow" />
             </a>
 
             <a
-              href="https://leetcode.com/u/nikyn_suresh"
+              href="/Lakshana_S_Talview_UIUX_Intern_Resume.html"
               target="_blank"
               rel="noopener noreferrer"
               className="contact-social-item"
               data-cursor="pointer"
             >
               <div className="social-item-left">
-                <Code2 size={18} />
-                <span>LeetCode (270+ Solved)</span>
+                <FileText size={18} />
+                <span>Download Tailored Resume</span>
+              </div>
+              <ArrowUpRight size={18} className="social-item-arrow" />
+            </a>
+
+            <a
+              href="#skills"
+              className="contact-social-item"
+              data-cursor="pointer"
+            >
+              <div className="social-item-left">
+                <Palette size={18} />
+                <span>UI/UX Design Stack</span>
               </div>
               <ArrowUpRight size={18} className="social-item-arrow" />
             </a>
@@ -128,21 +126,21 @@ const Contact = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
           className="contact-col contact-attribution-col"
         >
-          <h4 className="contact-col-heading">Availability</h4>
+          <h4 className="contact-col-heading">Internship Status</h4>
           <div className="contact-status-card glass-card">
             <span className="live-status-pill">
               <span className="live-dot" /> Open for Opportunities
             </span>
             <p className="contact-status-p">
-              Actively seeking Generative AI, Machine Learning Engineer, and RAG Architecture roles.
+              Actively seeking <strong>UI/UX Intern</strong> and <strong>Product Design</strong> roles. Eager to contribute to fast-paced product teams under senior design mentorship.
             </p>
             <a
-              href="mailto:s.nikyn005@gmail.com?subject=Opportunity at [Company Name]"
+              href="mailto:lakshanasaravanan1212@gmail.com?subject=UI/UX Internship Opportunity at [Company Name]"
               className="btn-hire-me"
               data-cursor="pointer"
             >
               <Send size={15} />
-              <span>Schedule an Interview</span>
+              <span>Reach Out Directly</span>
             </a>
           </div>
         </motion.div>

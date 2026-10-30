@@ -30,18 +30,18 @@ const Navbar = () => {
         <div className="header-inner">
           {/* Logo / Initials */}
           <a href="#home" className="navbar-title" data-cursor="pointer">
-            <span className="logo-badge">NV</span>
-            <span className="logo-name">Nikyn Suresh</span>
+            <span className="logo-badge">LS</span>
+            <span className="logo-name">Lakshana S</span>
           </a>
 
           {/* Center Email Connect Pill */}
           <a
-            href="mailto:s.nikyn005@gmail.com"
+            href="mailto:lakshanasaravanan1212@gmail.com"
             className="navbar-connect"
             data-cursor="pointer"
           >
             <span className="connect-dot" />
-            <span>s.nikyn005@gmail.com</span>
+            <span>lakshanasaravanan1212@gmail.com</span>
             <ArrowUpRight size={14} className="connect-arrow" />
           </a>
 
@@ -92,13 +92,13 @@ const Navbar = () => {
           </ul>
 
           <div className="mobile-connect-box">
-            <p className="mobile-connect-label">Available for ML & AI Engineering Roles</p>
+            <p className="mobile-connect-label">Available for UI/UX & Product Design Roles</p>
             <a
-              href="mailto:s.nikyn005@gmail.com"
+              href="mailto:lakshanasaravanan1212@gmail.com"
               className="mobile-email-link"
               onClick={() => setMobileMenuOpen(false)}
             >
-              s.nikyn005@gmail.com
+              lakshanasaravanan1212@gmail.com
             </a>
           </div>
         </div>

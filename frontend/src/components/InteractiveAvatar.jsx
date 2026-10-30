@@ -63,7 +63,7 @@ const InteractiveAvatar = () => {
       animationFrameId = requestAnimationFrame(animate);
     };
 
-    // Blink timer loop
+    // Realistic random blinking cycle
     const triggerBlink = () => {
       setIsBlinking(true);
       setTimeout(() => {
@@ -105,8 +105,8 @@ const InteractiveAvatar = () => {
         {/* Base Stylized Portrait */}
         <div className="avatar-portrait-frame">
           <img
-            src="/nikyn_avatar.jpg"
-            alt="Nikyn Suresh Animated Figure"
+            src="/lakshana_portrait.jpg"
+            alt="Lakshana S - UI/UX Designer"
             className="avatar-base-img"
           />
 
@@ -136,7 +136,7 @@ const InteractiveAvatar = () => {
             <div className="eyelid eyelid-bottom" />
           </div>
 
-          {/* Hologram scanline & subtle cyan gradient vignette */}
+          {/* Hologram scanline & subtle gradient vignette */}
           <div className="avatar-scanline-overlay" />
           <div className="avatar-lighting-overlay" />
         </div>
@@ -145,7 +145,7 @@ const InteractiveAvatar = () => {
       {/* Bottom Status Pill */}
       <div className="avatar-status-pill">
         <span className="status-live-dot" />
-        <span>EYE-TRACKING // NEURAL AVATAR ACTIVE</span>
+        <span>UI/UX DESIGNER // PORTFOLIO ACTIVE</span>
       </div>
     </div>
   );

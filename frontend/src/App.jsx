@@ -48,11 +48,11 @@ function App() {
         <button
           className={`btn-toggle ${viewMode === 'resume' ? 'active' : ''}`}
           onClick={() => setViewMode('resume')}
-          aria-label="Switch to LaTeX CV"
+          aria-label="Switch to Tailored Resume View"
           data-cursor="pointer"
         >
           <FileText size={15} />
-          <span>LaTeX CV</span>
+          <span>Resume (CV)</span>
         </button>
         <div className="divider" />
         <button

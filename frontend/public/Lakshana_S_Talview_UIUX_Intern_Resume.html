@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lakshana S - UI/UX Designer Resume (Talview)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #0b0f19;
+      color: #1e293b;
+      line-height: 1.42;
+      font-size: 13.5px;
+      -webkit-font-smoothing: antialiased;
+      padding: 30px 16px 60px;
+    }
+    .wrapper {
+      max-width: 860px;
+      margin: 0 auto;
+    }
+    /* Action Bar */
+    .action-bar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #1e293b;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      padding: 12px 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      color: #f8fafc;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+    .action-bar .tag {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.3px;
+    }
+    .action-bar .subtag {
+      color: #34d399;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .btn-print {
+      background: #2563eb;
+      color: white;
+      border: none;
+      padding: 8px 18px;
+      border-radius: 6px;
+      font-size: 13px;
+      font-weight: 700;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: all 0.2s;
+    }
+    .btn-print:hover {
+      background: #1d4ed8;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(37, 99, 235, 0.4);
+    }
+    /* Resume Paper */
+    .resume-sheet {
+      background: #ffffff;
+      padding: 36px 44px;
+      border-radius: 6px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+    }
+    /* Header */
+    .header {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      border-bottom: 2px solid #0f172a;
+      padding-bottom: 14px;
+      margin-bottom: 14px;
+    }
+    .avatar-box {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 2.5px solid #2563eb;
+      box-shadow: 0 4px 14px rgba(37, 99, 235, 0.2);
+      flex-shrink: 0;
+    }
+    .avatar-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .header-info {
+      flex: 1;
+    }
+    .header-name {
+      font-size: 26px;
+      font-weight: 800;
+      color: #0f172a;
+      letter-spacing: 0.5px;
+      line-height: 1.1;
+      margin-bottom: 3px;
+    }
+    .header-title {
+      font-size: 13.5px;
+      font-weight: 700;
+      color: #2563eb;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 8px;
+    }
+    .contact-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 18px;
+      font-size: 12.5px;
+      color: #475569;
+    }
+    .contact-item {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #475569;
+      text-decoration: none;
+    }
+    .contact-item a {
+      color: #2563eb;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .contact-item a:hover {
+      text-decoration: underline;
+    }
+    /* Sections */
+    .section {
+      margin-bottom: 13px;
+    }
+    .section-title {
+      font-size: 13.5px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: #1e3a8a;
+      border-bottom: 1.5px solid #2563eb;
+      padding-bottom: 2px;
+      margin-bottom: 6px;
+      letter-spacing: 0.8px;
+    }
+    .summary-text {
+      font-size: 12.8px;
+      color: #334155;
+      line-height: 1.45;
+      text-align: justify;
+    }
+    .skills-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 3.5px;
+      font-size: 12.4px;
+    }
+    .skill-line strong {
+      color: #0f172a;
+      font-weight: 700;
+    }
+    .skill-line {
+      color: #334155;
+    }
+    /* Entries */
+    .entry {
+      margin-bottom: 8px;
+    }
+    .entry:last-child {
+      margin-bottom: 0;
+    }
+    .entry-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 13.2px;
+      font-weight: 700;
+      color: #0f172a;
+      line-height: 1.3;
+    }
+    .entry-subtitle {
+      font-weight: 500;
+      color: #475569;
+      font-size: 12px;
+      font-style: italic;
+    }
+    .entry-date {
+      font-size: 12px;
+      font-weight: 600;
+      color: #64748b;
+      white-space: nowrap;
+    }
+    .entry-bullets {
+      margin: 2.5px 0 0;
+      padding-left: 17px;
+      font-size: 12.3px;
+      color: #334155;
+    }
+    .entry-bullets li {
+      margin-bottom: 2px;
+      line-height: 1.36;
+    }
+    .entry-bullets strong {
+      color: #0f172a;
+    }
+    /* Print Setup */
+    @media print {
+      @page {
+        margin: 10mm 14mm;
+        size: A4 portrait;
+      }
+      body {
+        background: transparent !important;
+        padding: 0 !important;
+        font-size: 12.5px;
+      }
+      .action-bar {
+        display: none !important;
+      }
+      .resume-sheet {
+        box-shadow: none !important;
+        padding: 0 !important;
+        border-radius: 0 !important;
+      }
+      .avatar-box {
+        border-color: #0f172a !important;
+        box-shadow: none !important;
+      }
+      .section-title {
+        border-bottom-color: #0f172a !important;
+        color: #0f172a !important;
+      }
+      .section, .entry {
+        page-break-inside: avoid;
+      }
+      a {
+        color: inherit !important;
+        text-decoration: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="action-bar">
+      <div>
+        <span class="tag">Target: Talview UI/UX Intern</span>
+        <span class="subtag" style="margin-left: 10px;">★ Custom-Tuned for JD Skills & Tools</span>
+      </div>
+      <button class="btn-print" onclick="window.print()">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"></path><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path><rect width="12" height="8" x="6" y="14"></rect></svg>
+        Print / Save Single-Page PDF
+      </button>
+    </div>
+
+    <div class="resume-sheet">
+      <!-- Header -->
+      <div class="header">
+        <div class="avatar-box">
+          <img src="/lakshana_portrait.jpg" alt="Lakshana S" />
+        </div>
+        <div class="header-info">
+          <h1 class="header-name">LAKSHANA S</h1>
+          <div class="header-title">UI/UX Designer | Aspiring Product Design Intern</div>
+          <div class="contact-row">
+            <span class="contact-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <a href="mailto:lakshanasaravanan1212@gmail.com">lakshanasaravanan1212@gmail.com</a>
+            </span>
+            <span class="contact-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <a href="tel:+919043270978">+91 90432 70978</a>
+            </span>
+            <span class="contact-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect width="4" height="12" x="2" y="9"/><circle cx="4" cy="4" r="2"/></svg>
+              <a href="https://linkedin.com/in/lakshh12" target="_blank">linkedin.com/in/lakshh12</a>
+            </span>
+            <span class="contact-item">
+              <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="#2563eb" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              Coimbatore, Tamil Nadu
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Professional Summary -->
+      <div class="section">
+        <div class="section-title">Professional Summary</div>
+        <p class="summary-text">
+          User-Centric UI/UX Designer and Engineering undergraduate with a strong foundation in <strong>human-centered design principles, rapid wireframing, and interactive prototyping</strong>. Highly proficient in <strong>Figma, Sketch, Balsamiq, and InVision</strong>, with hands-on experience conducting user research, crafting low-to-high fidelity mockups, and architecting accessible UI component libraries. Proven ability to gather user requirements, design complex web dashboards, and troubleshoot UX friction points. Eager to contribute fresh creative perspectives, rapid iteration, and user-centered design excellence to <strong>Talview's AI-driven assessment and candidate experience ecosystem</strong> under senior designer mentorship.
+        </p>
+      </div>
+
+      <!-- Skills -->
+      <div class="section">
+        <div class="section-title">Skills & Methodologies</div>
+        <div class="skills-grid">
+          <div class="skill-line"><strong>Design & Prototyping Tools:</strong> Figma, Sketch, Balsamiq, InVision, Adobe XD, Adobe Photoshop, Adobe Illustrator, Canva, Miro, FigJam</div>
+          <div class="skill-line"><strong>UI/UX Design Competencies:</strong> User Requirements Gathering, Low & High-Fidelity Wireframing, Rapid Prototyping, User Flows, Information Architecture, Reusable UI Components & Design Systems, Usability Testing, Heuristic Evaluation, UX Troubleshooting, Responsive Web & Mobile Design, Accessibility (WCAG 2.1)</div>
+          <div class="skill-line"><strong>Visual & Interaction Design:</strong> Typography Hierarchy, Color Theory, Layout Grid Systems, Visual Hierarchy, Micro-interactions, Design Tokens, Brand Identity Assets</div>
+          <div class="skill-line"><strong>Product & AI UX Awareness:</strong> Conversational UI & AI Interaction Patterns (Assessment Bots / Virtual Interviewers), Multi-Role Workflows (Candidate, Evaluator, Admin), Assessment Dashboards</div>
+          <div class="skill-line"><strong>Soft Skills & Work Culture:</strong> Cross-functional Collaboration, Problem-Solving Mindset, Attention to Detail, Creative Brainstorming, Continuous Adaptability (Talview 5Cs)</div>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <div class="section">
+        <div class="section-title">UI/UX Design Projects</div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Student Learning & Assessment Dashboard | <span class="entry-subtitle">Figma, Balsamiq, Design Systems, Usability Testing</span></span>
+            <span class="entry-date">2025</span>
+          </div>
+          <ul class="entry-bullets">
+            <li>Architected an end-to-end web dashboard for course assessments, timed test modules, and real-time performance analytics across student and evaluator roles.</li>
+            <li>Drafted low-fidelity wireframes in <strong>Balsamiq</strong> to map testing workflows, transitioning to pixel-perfect high-fidelity mockups and interactive prototypes in <strong>Figma</strong>.</li>
+            <li>Engineered a modular 30+ piece UI component library (timers, progress trackers, question palettes, scorecards) with strict visual consistency and accessibility standards.</li>
+            <li>Conducted usability walkthroughs with 15+ peer testers, identifying navigation bottlenecks and reducing quiz completion friction by 25%.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Smart Gate Pass & Identity Management System | <span class="entry-subtitle">Figma, Sketch, InVision, User Flows</span></span>
+            <span class="entry-date">2024</span>
+          </div>
+          <ul class="entry-bullets">
+            <li>Designed a responsive, multi-tier verification interface streamlining secure approval workflows for students, faculty approvers, and security administrators.</li>
+            <li>Mapped comprehensive user journeys and edge cases in <strong>Sketch</strong>, resolving permission routing complexities and reducing user drop-off.</li>
+            <li>Created interactive click-through prototypes in <strong>InVision</strong> and <strong>Figma</strong> to validate check-in and automated status notification flows with stakeholders.</li>
+            <li>Redesigned status indicators and form inputs, cutting administrative processing time and achieving a 95% user satisfaction rate.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Fitness & Wellness Tracking Mobile App | <span class="entry-subtitle">Figma, Balsamiq, Mobile UX, User Research</span></span>
+            <span class="entry-date">2024</span>
+          </div>
+          <ul class="entry-bullets">
+            <li>Developed a user-friendly mobile application focused on tracking personal daily habits, workout milestones, and nutritional goals.</li>
+            <li>Formulated user personas, empathy maps, and rapid wireframes in <strong>Balsamiq</strong> to optimize ergonomics for one-handed mobile navigation.</li>
+            <li>Implemented cohesive typography, color hierarchy, and engaging micro-interactions in <strong>Figma</strong> for fluid screen transitions and high user retention.</li>
+            <li>Tested usability across diverse mobile viewports, resolving touch-target sizing issues and adhering to 48x48px tap accessibility standards.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Experience -->
+      <div class="section">
+        <div class="section-title">Experience</div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Intelle Power Automation Pvt Ltd — UI/UX Designer <span class="entry-subtitle">(Freelance Project)</span></span>
+            <span class="entry-date">Oct 2024 – Dec 2024</span>
+          </div>
+          <ul class="entry-bullets">
+            <li>Led the UI/UX design for a responsive corporate web platform, gathering stakeholder requirements and transforming business goals into intuitive product specs.</li>
+            <li>Produced initial wireframes in <strong>Balsamiq/Sketch</strong> and developed full interactive prototypes and reusable UI kits in <strong>Figma</strong>.</li>
+            <li>Enforced consistent visual design principles, typography hierarchies, and custom branded vector assets using Adobe Illustrator and Photoshop.</li>
+            <li>Collaborated with front-end developers during handoff, diagnosing and troubleshooting responsive layout and cross-device usability defects.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Intelle Power System — Visual & Graphic Designer <span class="entry-subtitle">(Freelance / Project-Based)</span></span>
+            <span class="entry-date">Jul 2024 – Sep 2024</span>
+          </div>
+          <ul class="entry-bullets">
+            <li>Designed corporate marketing collaterals, digital invitation suites, and event decks aligned with corporate brand guidelines.</li>
+            <li>Utilized Adobe Photoshop, Adobe Illustrator, and Canva to deliver print and digital assets with strict typographic balance and color harmony.</li>
+          </ul>
+        </div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Code Core — Multimedia & Content Designer <span class="entry-subtitle">(Freelance / Project-Based)</span></span>
+            <span class="entry-date">Feb 2024 – May 2024</span>
+          </div>
+          <ul class="entry-bullets">
+            <li>Edited promotional social media videos, implementing transitions, text animations, and audio mastering to enhance audience engagement.</li>
+            <li>Participated in creative brainstorming sessions with team leads to deliver engaging, brand-consistent multimedia content.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Education -->
+      <div class="section">
+        <div class="section-title">Education</div>
+
+        <div class="entry">
+          <div class="entry-header">
+            <span>Sri Shakthi Institute of Engineering and Technology</span>
+            <span class="entry-date">Coimbatore, Tamil Nadu</span>
+          </div>
+          <div class="entry-header" style="font-weight: normal; font-size: 12.3px; margin-top: 1px;">
+            <span style="font-style: italic;">Bachelor of Engineering (B.E.) in Electrical and Electronics Engineering | CGPA: 7.9 / 10.0</span>
+            <span style="font-style: italic;">2023 – 2027</span>
+          </div>
+        </div>
+
+        <div class="entry" style="margin-top: 4px;">
+          <div class="entry-header">
+            <span>Sri Chaitanya Techno School</span>
+            <span class="entry-date">Coimbatore, Tamil Nadu</span>
+          </div>
+          <div class="entry-header" style="font-weight: normal; font-size: 12.3px; margin-top: 1px;">
+            <span style="font-style: italic;">Higher Secondary Certificate (HSC) — Percentage: 65% (2022–2023) | Secondary School (SSLC) — Percentage: 92.4% (2020–2021)</span>
+            <span style="font-style: italic;">2020 – 2023</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

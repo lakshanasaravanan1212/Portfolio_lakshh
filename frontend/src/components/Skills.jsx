@@ -1,32 +1,32 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Database, Brain, Code, Cpu } from 'lucide-react';
+import { Palette, Layout, Layers, Sparkles } from 'lucide-react';
 import './Skills.css';
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "AI & Machine Learning",
-      icon: <Brain size={20} />,
-      skills: ["RAG Architectures", "Agentic AI", "Prompt Engineering", "LangChain", "LangGraph", "LLM APIs (Gemini)", "Semantic Search", "NLP", "Deep Learning (CNN, LSTM)"],
+      title: "Design & Prototyping Tools",
+      icon: <Layout size={20} />,
+      skills: ["Figma", "Sketch", "Balsamiq", "InVision", "Adobe XD", "Miro / FigJam", "Canva"],
       colorClass: ""
     },
     {
-      title: "Full-Stack & Backend",
-      icon: <Code size={20} />,
-      skills: ["Python", "FastAPI", "React.js", "Next.js", "RESTful APIs", "SQL"],
+      title: "UI/UX Methodologies",
+      icon: <Layers size={20} />,
+      skills: ["User Requirements Gathering", "Wireframing (Low & High Fi)", "Interactive Prototyping", "User Flows", "Information Architecture", "Usability Testing", "Heuristic Evaluation"],
       colorClass: "blue-note"
     },
     {
-      title: "Databases & DevOps",
-      icon: <Database size={20} />,
-      skills: ["ChromaDB", "FAISS", "MySQL", "MongoDB", "Git / GitHub"],
+      title: "Visual Design & Branding",
+      icon: <Palette size={20} />,
+      skills: ["Adobe Illustrator", "Adobe Photoshop", "Typography Hierarchy", "Color Theory", "Visual Hierarchy", "Brand Asset Design", "Iconography"],
       colorClass: "green-note"
     },
     {
-      title: "Libraries & Data Science",
-      icon: <Cpu size={20} />,
-      skills: ["PyTorch", "TensorFlow", "Scikit-learn", "Pandas", "NumPy"],
+      title: "Design Systems & Quality",
+      icon: <Sparkles size={20} />,
+      skills: ["Reusable Component Kits", "Design Tokens", "WCAG Accessibility", "Responsive Web Design", "Mobile Touch Ergonomics (48px)", "Micro-interactions"],
       colorClass: ""
     }
   ];
@@ -35,8 +35,8 @@ const Skills = () => {
     <section id="skills" className="skills-section">
       <div className="container">
         <div className="section-header-sketchy">
-          <h2 className="sketchy">Technical_Skills.md</h2>
-          <p className="handwritten">My specialized tools and core technologies</p>
+          <h2 className="sketchy">UIUX_Skills.md</h2>
+          <p className="handwritten">My specialized design tools, methods, and component standards</p>
         </div>
 
         <div className="skills-board">

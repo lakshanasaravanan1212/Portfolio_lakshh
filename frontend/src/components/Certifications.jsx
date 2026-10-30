@@ -1,43 +1,43 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Award, ShieldCheck, Zap, Code2, Database, ExternalLink } from 'lucide-react';
+import { Award, ShieldCheck, Zap, Palette, Layers, ExternalLink } from 'lucide-react';
 import './Certifications.css';
 
 const Certifications = () => {
   const certifications = [
     {
-      title: 'Python for Data Science, AI & Development',
-      issuer: 'IBM (Coursera)',
-      badge: 'Verified Credential',
+      title: 'UI/UX Design & Human-Centered Interaction',
+      issuer: 'Design Thinking & UX Foundations',
+      badge: 'Core Specialization',
       date: '2024',
-      detail: 'Comprehensive program covering Python fundamentals, data structures, pandas, NumPy, REST APIs, and automated data extraction for AI pipelines.',
-      skills: ['Python', 'Pandas', 'NumPy', 'Data Pipelines', 'APIs']
+      detail: 'Comprehensive training in human-centered design principles, user persona development, rapid wireframing with Balsamiq, and interactive prototyping in Figma & Sketch.',
+      skills: ['Figma', 'Balsamiq', 'Sketch', 'User Research', 'Design Systems']
     },
     {
-      title: 'AI in Healthcare Workshop',
-      issuer: 'IIT Madras Research Park',
-      badge: 'Technical Workshop',
+      title: 'Visual Design, Typography & Brand Systems',
+      issuer: 'Creative Digital Design',
+      badge: 'Visual Asset Mastery',
       date: '2024',
-      detail: 'In-depth exploration of machine learning diagnostics, clinical NLP architectures, and deploying generative models in sensitive healthcare contexts.',
-      skills: ['Clinical ML', 'NLP', 'Medical Imaging', 'Data Governance']
+      detail: 'In-depth mastery of typographic hierarchy, color theory, layout grid systems, brand identity guidelines, and vector asset creation using Adobe Illustrator, Photoshop, and Canva.',
+      skills: ['Adobe Illustrator', 'Photoshop', 'Typography', 'Color Theory', 'Canva']
     }
   ];
 
   const highlights = [
     {
-      stat: '270+',
-      title: 'LeetCode Problems Solved',
-      desc: 'Demonstrated mastery across graph traversal, dynamic programming, and algorithm optimization.'
+      stat: '30+',
+      title: 'Reusable UI Components',
+      desc: 'Architected modular design system components with consistent accessibility and design tokens.'
     },
     {
-      stat: '14K+',
-      title: 'Documents Vectorized',
-      desc: 'Engineered high-throughput embedding pipelines for sub-second semantic document retrieval.'
+      stat: '100%',
+      title: 'User-Centered Focus',
+      desc: 'Iterative design workflows tested with real users, eliminating friction and maximizing usability.'
     },
     {
       stat: '3+',
-      title: 'Full-Stack AI Apps Deployed',
-      desc: 'Architected production systems integrating FastAPI, React, ChromaDB, and LLM APIs.'
+      title: 'Products Designed End-to-End',
+      desc: 'Delivered web dashboards, multi-tier access systems, and mobile apps from concept to interactive handoff.'
     }
   ];
 
@@ -50,36 +50,36 @@ const Certifications = () => {
         transition={{ duration: 0.8 }}
         className="cert-header"
       >
-        <span className="section-eyebrow">Verification & Metrics</span>
+        <span className="section-eyebrow">Design Standards</span>
         <h2 className="section-title">
-          Certifications <span>& Badges</span>
+          Credentials <span>& Impact</span>
         </h2>
         <p className="section-desc">
-          Verified academic and professional credentials backed by real-world system implementations.
+          Design competencies and quantified outcomes backed by real-world system implementations.
         </p>
       </motion.div>
 
-      {/* Metrics Row */}
-      <div className="cert-metrics-row">
+      {/* Grid of Highlight Metrics */}
+      <div className="cert-highlights-grid">
         {highlights.map((item, idx) => (
           <motion.div
             key={idx}
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 25 }}
+            whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: idx * 0.1 }}
-            className="cert-metric-card glass-card"
+            transition={{ duration: 0.5, delay: idx * 0.12 }}
+            className="cert-stat-card glass-card"
             data-cursor="pointer"
           >
-            <span className="metric-giant-number">{item.stat}</span>
-            <h4 className="metric-title">{item.title}</h4>
-            <p className="metric-desc">{item.desc}</p>
+            <div className="stat-number">{item.stat}</div>
+            <h4 className="stat-title">{item.title}</h4>
+            <p className="stat-desc">{item.desc}</p>
           </motion.div>
         ))}
       </div>
 
-      {/* Certifications Cards */}
-      <div className="cert-cards-grid">
+      {/* Certification Cards */}
+      <div className="cert-cards-container">
         {certifications.map((cert, idx) => (
           <motion.div
             key={idx}
@@ -90,23 +90,22 @@ const Certifications = () => {
             className="cert-card glass-card"
             data-cursor="pointer"
           >
-            <div className="cert-card-header">
-              <div className="cert-icon-box">
-                <Award size={24} />
+            <div className="cert-card-top">
+              <div className="cert-badge-wrap">
+                <ShieldCheck size={18} className="cert-badge-icon" />
+                <span className="cert-badge-text">{cert.badge}</span>
               </div>
-              <div className="cert-badge-pill">
-                <ShieldCheck size={14} />
-                <span>{cert.badge}</span>
-              </div>
+              <span className="cert-year">{cert.date}</span>
             </div>
 
-            <h3 className="cert-card-title">{cert.title}</h3>
-            <span className="cert-issuer">{cert.issuer} • {cert.date}</span>
-            <p className="cert-desc">{cert.detail}</p>
+            <h3 className="cert-name">{cert.title}</h3>
+            <h5 className="cert-issuer">{cert.issuer}</h5>
 
-            <div className="cert-skills-wrap">
+            <p className="cert-detail">{cert.detail}</p>
+
+            <div className="cert-skills-chips">
               {cert.skills.map((skill, sIdx) => (
-                <span key={sIdx} className="cert-skill-tag">
+                <span key={sIdx} className="cert-skill-chip">
                   {skill}
                 </span>
               ))}

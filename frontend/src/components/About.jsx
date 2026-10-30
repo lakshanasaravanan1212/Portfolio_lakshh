@@ -1,33 +1,33 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Cpu, Brain, Network, Database, Sparkles, Terminal } from 'lucide-react';
+import { Palette, Layers, Layout, Sparkles, CheckCircle2 } from 'lucide-react';
 import './About.css';
 
 const About = () => {
   const blocks = [
     {
-      icon: '⚙️',
-      title: 'RAG & Vector Architecture',
-      description: 'Specialized in architecting scalable Retrieval-Augmented Generation systems. From semantic chunking and dense embeddings to hybrid search with ChromaDB and FAISS, I build pipelines that deliver sub-second, context-accurate responses over massive knowledge corpora.',
-      tag: 'RAG Systems'
+      icon: '🎨',
+      title: 'User-Centered UI/UX Design',
+      description: 'Dedicated to understanding real user pain points, gathering product requirements, and designing intuitive, accessible interfaces across web and mobile platforms with strict WCAG compliance.',
+      tag: 'Human-Centered Design'
     },
     {
-      icon: '🤖',
-      title: 'Autonomous Agents & LangGraph',
-      description: 'Deeply experienced in orchestrating stateful multi-agent workflows using LangChain and LangGraph. I design autonomous loops that reason through complex tasks—such as parsing multi-page technical documentation and auto-synthesizing production SDK wrappers.',
-      tag: 'Agentic Workflows'
+      icon: '📐',
+      title: 'Rapid Wireframing & Prototyping',
+      description: 'Skilled in turning abstract concepts into rapid low-fidelity wireframes in Balsamiq, and scaling them into interactive, click-through prototypes in Figma, Sketch, and InVision for early usability testing.',
+      tag: 'Figma • Balsamiq • InVision'
     },
     {
-      icon: '🧠',
-      title: 'Algorithmic Mastery (270+ LeetCode)',
-      description: 'Strong foundation in Data Structures, Algorithms, and optimization. Having solved 270+ LeetCode problems, I bring rigorous analytical precision to memory allocation, time complexity, and high-throughput data processing in ML pipelines.',
-      tag: 'Data Structures & Algorithms'
+      icon: '🧩',
+      title: 'Design Systems & Component Kits',
+      description: 'Architecting scalable UI component libraries with reusable widgets, tokenized color palettes, consistent typography scales, and micro-interactions that streamline developer handoff.',
+      tag: 'Reusable UI Kits'
     },
     {
-      icon: '⚡',
-      title: 'High-Performance Full-Stack AI',
-      description: 'Bridging modern machine learning with production-ready software engineering. I build robust FastAPI backend services, responsive React/Next.js client workbenches, and automated evaluation loops with strict latency and security boundaries.',
-      tag: 'FastAPI • React • Next.js'
+      icon: '✨',
+      title: 'Visual Identity & Creative Media',
+      description: 'Proficient in Adobe Illustrator, Photoshop, and Canva. Experienced in crafting bespoke logos, brand identity assets, marketing collaterals, and engaging social video content.',
+      tag: 'Branding & Visual Design'
     }
   ];
 
@@ -41,13 +41,13 @@ const About = () => {
           transition={{ duration: 0.8 }}
           className="about-header"
         >
-          <span className="section-eyebrow">Biography & Focus</span>
+          <span className="section-eyebrow">Biography & Design Focus</span>
           <h2 className="section-title">
-            Architecting <span>Reasoning Systems</span>
+            Crafting <span>Intuitive Experiences</span>
           </h2>
           <p className="section-desc">
-            B.Tech in Artificial Intelligence & Data Science at Sri Shakthi Institute of Engineering and Technology. 
-            Focused on the intersection of Generative AI, high-dimensional vector search, and agent orchestration.
+            B.E. in Electrical and Electronics Engineering at Sri Shakthi Institute of Engineering and Technology, Coimbatore (CGPA: 7.9). 
+            Focused on bridging user empathy, systematic wireframing, and state-of-the-art interaction design.
           </p>
         </motion.div>
 

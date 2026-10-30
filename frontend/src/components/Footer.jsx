@@ -12,10 +12,10 @@ const Footer = () => {
       <div className="footer-inner">
         <div className="footer-left">
           <p className="footer-tech-text">
-            Built with <span>React</span>, <span>FastAPI</span> & <span>Interactive Canvas</span>.
+            Designed with <span>Figma</span>, <span>React</span> & <span>Human-Centered Empathy</span>.
           </p>
           <p className="footer-author-text">
-            Engineered by <span className="highlight-name">Nikyn Suresh</span>.
+            Portfolio of <span className="highlight-name">Lakshana S</span> — UI/UX Designer.
           </p>
         </div>
 

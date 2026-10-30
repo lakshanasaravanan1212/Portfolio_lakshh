@@ -1,6 +1,6 @@
 import React, { useRef, useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { Sparkles, Code2, Terminal, Cpu, CheckCircle2 } from 'lucide-react';
+import { Sparkles, Palette, Layers, CheckCircle2 } from 'lucide-react';
 import './HeroPortrait.css';
 
 const HeroPortrait = () => {
@@ -97,8 +97,8 @@ const HeroPortrait = () => {
           {/* Real Photo in Studio Black & White */}
           <div className="portrait-image-wrapper">
             <img
-              src="/nikyn_portrait.jpg"
-              alt="Nikyn Suresh - Generative AI Engineer"
+              src="/lakshana_portrait.jpg"
+              alt="Lakshana S - UI/UX Designer & Product Thinker"
               className="portrait-photo"
             />
             {/* Cinematic Vignette & Bottom Shadow Blend */}
@@ -116,7 +116,7 @@ const HeroPortrait = () => {
           <div className="tech-corner corner-bl" />
           <div className="tech-corner corner-br" />
 
-          {/* Floating Top-Right Badge: RAG Architect */}
+          {/* Floating Top-Right Badge: UI/UX & Design Systems */}
           <motion.div
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -127,13 +127,13 @@ const HeroPortrait = () => {
               <Sparkles size={14} className="icon-pulse" />
             </div>
             <div className="telemetry-text">
-              <span className="telemetry-title">RAG & Agent Architect</span>
-              <span className="telemetry-sub">LangGraph • ChromaDB</span>
+              <span className="telemetry-title">UI/UX & Design Systems</span>
+              <span className="telemetry-sub">Figma • Sketch • InVision</span>
             </div>
             <span className="telemetry-live-dot" />
           </motion.div>
 
-          {/* Floating Bottom-Left Badge: LeetCode Mastery */}
+          {/* Floating Bottom-Left Badge: User-Centered Design */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
@@ -141,19 +141,19 @@ const HeroPortrait = () => {
             className="floating-telemetry-badge badge-bottom-left"
           >
             <div className="telemetry-icon-box code-box">
-              <Code2 size={15} />
+              <Layers size={15} />
             </div>
             <div className="telemetry-text">
-              <span className="telemetry-title">270+ LeetCode Solved</span>
-              <span className="telemetry-sub">DSA & Optimization</span>
+              <span className="telemetry-title">User-Centered Design</span>
+              <span className="telemetry-sub">Wireframing • Usability</span>
             </div>
           </motion.div>
 
           {/* Floating Bottom Center Glass Pill */}
           <div className="portrait-identity-pill">
             <span className="identity-pulse" />
-            <span className="identity-title">NIKYN V S // GENAI ARCHITECT</span>
-            <span className="identity-tag">ONLINE</span>
+            <span className="identity-title">LAKSHANA S // UI/UX DESIGNER</span>
+            <span className="identity-tag">PORTFOLIO</span>
           </div>
         </div>
       </div>
@@ -173,10 +173,10 @@ const HeroPortrait = () => {
           type="button"
           className={`mode-btn ${filterMode === 'cyber' ? 'active' : ''}`}
           onClick={() => setFilterMode('cyber')}
-          title="Cyberpunk Neon Accent"
+          title="Vibrant Accent"
           data-cursor="pointer"
         >
-          Cyber Neon
+          Color Tone
         </button>
       </div>
     </div>

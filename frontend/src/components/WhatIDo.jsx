@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { Bot, Database, Layers, ArrowRight } from 'lucide-react';
+import { Palette, Layers, Layout, ArrowRight, Sparkles } from 'lucide-react';
 import './WhatIDo.css';
 
 const WhatIDo = () => {
@@ -9,30 +9,30 @@ const WhatIDo = () => {
   const services = [
     {
       id: 0,
-      icon: <Bot size={28} className="what-service-icon" />,
-      title: 'Generative AI & Agentic Systems',
-      subtitle: 'Autonomous multi-agent orchestration',
-      description: 'Designing stateful reasoning loops with LangChain and LangGraph. Implementing self-governing agent chains that break complex development tasks into autonomous, verified pipelines.',
-      skillsTitle: 'Skillset & Tools',
-      tags: ['LangGraph', 'LangChain', 'Agentic Workflows', 'Prompt Systems', 'Gemini AI', 'Evaluation Loops']
+      icon: <Layers size={28} className="what-service-icon" />,
+      title: 'UI/UX Research & Requirements Gathering',
+      subtitle: 'Empathy-driven problem discovery',
+      description: 'Conducting user research, building user personas, mapping user journeys, and gathering stakeholder requirements to transform complex workflows into intuitive, human-centered digital experiences.',
+      skillsTitle: 'Skillset & Methodologies',
+      tags: ['User Research', 'User Personas', 'Journey Mapping', 'Information Architecture', 'User Flows', 'Requirement Gathering']
     },
     {
       id: 1,
-      icon: <Database size={28} className="what-service-icon" />,
-      title: 'Large-Scale RAG & Vector Search',
-      subtitle: 'High-dimensional semantic retrieval',
-      description: 'Indexing, chunking, and querying large datasets (14,000+ policy and document corpora) using ChromaDB and FAISS with sub-second retrieval latency and strict grounding checks.',
-      skillsTitle: 'Skillset & Tools',
-      tags: ['RAG Pipelines', 'ChromaDB', 'FAISS', 'Dense Embeddings', 'Semantic Chunking', 'Hybrid Search']
+      icon: <Layout size={28} className="what-service-icon" />,
+      title: 'Wireframing & Interactive Prototyping',
+      subtitle: 'Rapid ideation to pixel-perfect mockups',
+      description: 'Drafting low-fidelity wireframes in Balsamiq for quick structural validation, and evolving them into interactive, click-through high-fidelity prototypes in Figma, Sketch, and InVision for seamless stakeholder and user testing.',
+      skillsTitle: 'Tools & Workflows',
+      tags: ['Figma', 'Sketch', 'Balsamiq', 'InVision', 'Interactive Prototypes', 'Micro-interactions', 'Mobile Ergonomics']
     },
     {
       id: 2,
-      icon: <Layers size={28} className="what-service-icon" />,
-      title: 'Full-Stack AI Product Engineering',
-      subtitle: 'Production software architecture',
-      description: 'Deploying high-throughput FastAPI backend microservices and clean React/Next.js client interfaces. Packaging models with Docker, managing asynchronous queues, and optimizing API latency.',
-      skillsTitle: 'Skillset & Tools',
-      tags: ['FastAPI', 'React.js', 'Next.js', 'Python', 'REST APIs', 'Docker', 'SQL / MongoDB']
+      icon: <Palette size={28} className="what-service-icon" />,
+      title: 'Design Systems & Visual Design',
+      subtitle: 'Consistent, scalable product foundations',
+      description: 'Building modular component systems with tokenized typography scales, harmonious color schemes, and WCAG-accessible components. Crafting custom logos and brand assets using Adobe Illustrator and Photoshop.',
+      skillsTitle: 'Design Assets & Tools',
+      tags: ['Design Systems', 'Reusable Components', 'Usability Testing', 'Adobe Illustrator', 'Photoshop', 'Canva', 'WCAG 2.1']
     }
   ];
 
@@ -54,7 +54,7 @@ const WhatIDo = () => {
             I<span className="accent-span"> DO</span>
           </h2>
           <p className="what-left-desc">
-            Transforming research-grade machine learning models into resilient, scalable, production-grade applications.
+            Transforming user research, business requirements, and multi-tier workflows into intuitive, tested, and accessible digital products.
           </p>
         </motion.div>
 
@@ -82,7 +82,7 @@ const WhatIDo = () => {
                       width="100%"
                       height="100%"
                       fill="none"
-                      stroke={isActive ? '#5eead4' : 'rgba(255, 255, 255, 0.2)'}
+                      stroke={isActive ? '#3b82f6' : 'rgba(255, 255, 255, 0.2)'}
                       strokeWidth="1.5"
                       strokeDasharray="6 6"
                     />
@@ -98,26 +98,22 @@ const WhatIDo = () => {
                   <div className="what-card-header">
                     {item.icon}
                     <div className="what-title-box">
-                      <h3 className="what-title">{item.title}</h3>
-                      <h4 className="what-subtitle">{item.subtitle}</h4>
+                      <h3 className="what-card-title">{item.title}</h3>
+                      <p className="what-card-subtitle">{item.subtitle}</p>
                     </div>
                   </div>
 
-                  <p className="what-desc">{item.description}</p>
+                  <p className="what-card-desc">{item.description}</p>
 
-                  <div className="what-skills-area">
-                    <h5 className="what-skills-heading">{item.skillsTitle}</h5>
+                  <div className="what-skills-block">
+                    <span className="what-skills-label">{item.skillsTitle}:</span>
                     <div className="what-tags-wrap">
                       {item.tags.map((tag, tIdx) => (
-                        <span key={tIdx} className="what-pill-tag">
+                        <span key={tIdx} className="what-tag">
                           {tag}
                         </span>
                       ))}
                     </div>
-                  </div>
-
-                  <div className="what-arrow-indicator">
-                    <ArrowRight size={16} />
                   </div>
                 </div>
               </motion.div>

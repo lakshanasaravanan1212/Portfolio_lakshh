@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Github, ExternalLink, ArrowUpRight, X, Sparkles, Database, Layers, CheckCircle2, Bot } from 'lucide-react';
+import { ExternalLink, ArrowUpRight, X, Sparkles, Layout, Layers, CheckCircle2, Palette } from 'lucide-react';
 import './Projects.css';
 
 const Projects = () => {
@@ -9,83 +9,60 @@ const Projects = () => {
 
   const projects = [
     {
-      id: 'learning-platform',
-      name: 'AI-Based Learning Platform',
-      category: 'rag',
-      tagline: 'Autonomous PDF ingestion, vector search, and instant context-accurate quiz & flashcard synthesis.',
+      id: 'student-assessment-dashboard',
+      name: 'Student Learning & Assessment Dashboard',
+      category: 'web',
+      tagline: 'End-to-end web dashboard for course management, timed test examinations, and real-time performance analytics.',
       status: 'launched',
-      projectType: 'Platform',
+      projectType: 'Web Dashboard',
       featured: true,
-      period: 'Dec 2025 – Mar 2026',
-      techStack: ['Python', 'FastAPI', 'React 18', 'Vite', 'Gemini AI', 'RAG', 'ChromaDB', 'pypdf', 'JWT'],
-      github: 'https://github.com/Nikynsuresh/AI-based-Learning-platform.git',
-      live: 'https://github.com/Nikynsuresh/AI-based-Learning-platform.git',
-      problem: 'Students and educators waste hours manually distilling multi-page textbooks into structured flashcards and quizzes, often suffering from LLM hallucinations when not grounded in raw course material.',
-      solution: 'Architected an end-to-end RAG system that ingests raw PDFs and web content, performs semantic chunking into dense embeddings stored in ChromaDB, and uses Gemini AI with grounding prompts to generate real-time study materials.',
+      period: '2025',
+      techStack: ['Figma', 'Balsamiq', 'Design Systems', 'Usability Testing', 'Information Architecture', 'WCAG 2.1'],
+      live: 'https://linkedin.com/in/lakshh12',
+      problem: 'Students and educators struggled with fragmented testing portals that lacked clear question palettes, transparent countdown timers, and accessible test performance visualizations.',
+      solution: 'Gathered requirements across students and instructors; drafted low-fidelity wireframes in Balsamiq, followed by interactive prototypes in Figma. Engineered a modular 30+ piece UI component library for timed quizzes, progress bars, and scorecards with strict visual hierarchy.',
       metrics: [
-        { label: 'Latency', val: '< 650ms' },
-        { label: 'Grounding', val: '99.4%' },
-        { label: 'Vector Store', val: 'ChromaDB' }
+        { label: 'UX Friction Reduction', val: '25%' },
+        { label: 'Component Library', val: '30+ Pieces' },
+        { label: 'Usability Satisfaction', val: '92%' }
       ]
     },
     {
-      id: 'compliance-card',
-      name: 'Agent Compliance Card Generator',
-      category: 'agentic',
-      tagline: 'Automated compliance, safety audit, and governance system for AI agents and LLM architectures.',
+      id: 'smart-gate-pass-system',
+      name: 'Smart Gate Pass & Identity Management System',
+      category: 'web',
+      tagline: 'Responsive multi-tier verification interface streamlining secure approval workflows for students, faculty, and administrators.',
       status: 'launched',
-      projectType: 'Security & Governance',
+      projectType: 'Enterprise System',
       featured: true,
-      period: 'May 2026 – Present',
-      techStack: ['Python 3.12', 'FastAPI', 'React 18', 'Vite', 'Python AST', 'EU AI Act', 'NIST AI RMF', 'ISO 42001', 'OWASP Top 10'],
-      github: 'https://github.com/Nikynsuresh',
-      live: 'https://github.com/Nikynsuresh',
-      problem: 'As autonomous AI agents execute external tools and multi-step decisions, auditing their compliance with emerging regulatory frameworks (EU AI Act, NIST AI RMF, ISO 42001, OWASP LLM Top 10) is complex and manual.',
-      solution: 'Engineered an automated governance system using Python AST and static/semantic analysis to inspect agent codebases, detect security risks, and auto-generate verifiable AI Compliance Cards with an interactive React dashboard.',
+      period: '2024',
+      techStack: ['Figma', 'Sketch', 'InVision', 'User Flows', 'Wireframing', 'Responsive Design'],
+      live: 'https://linkedin.com/in/lakshh12',
+      problem: 'Manual paper-based campus gate pass approvals caused severe bottlenecks, lost audit trails, and high friction for security guards and faculty approvers.',
+      solution: 'Mapped comprehensive user journeys and edge cases in Sketch; built interactive click-through prototypes in InVision and Figma to validate instant multi-tier approval states, automated status notifications, and real-time visitor audit tables.',
       metrics: [
-        { label: 'Standards', val: 'EU / NIST / ISO' },
-        { label: 'Analysis', val: 'Python AST' },
-        { label: 'Focus', val: 'AI Safety & Audit' }
+        { label: 'Processing Speed', val: '+40% Faster' },
+        { label: 'User Satisfaction', val: '95%' },
+        { label: 'Turnaround Reduction', val: '35%' }
       ]
     },
     {
-      id: 'smart-devtool',
-      name: 'Smart DevTool for API Integration',
-      category: 'agentic',
-      tagline: 'Autonomous LangGraph agent that parses complex API documentation and auto-synthesizes SDKs and Postman collections.',
+      id: 'fitness-tracking-app',
+      name: 'Fitness & Wellness Tracking Mobile App',
+      category: 'mobile',
+      tagline: 'Intuitive mobile wellness application focused on daily activity tracking, personalized workout goals, and nutrition analytics.',
       status: 'launched',
-      projectType: 'DevTool',
+      projectType: 'Mobile Application',
       featured: false,
-      period: 'Apr 2026 – Jun 2026',
-      techStack: ['Next.js', 'FastAPI', 'Python', 'LangGraph', 'REST APIs', 'Postman'],
-      github: 'https://github.com/Nikynsuresh/Smart-DevTool-for-Api-Integration.git',
-      live: 'https://github.com/Nikynsuresh/Smart-DevTool-for-Api-Integration.git',
-      problem: 'Integrating unfamiliar third-party APIs requires reading dense documentation, writing boilerplate client wrappers, and assembling Postman collections manually.',
-      solution: 'Built an autonomous developer tool that ingests raw API documentation, validates endpoints, generates typed SDK wrappers, and outputs complete testable Postman collections.',
+      period: '2024',
+      techStack: ['Figma', 'Balsamiq', 'Mobile UX', 'Micro-interactions', 'User Personas', 'Color Theory'],
+      live: 'https://linkedin.com/in/lakshh12',
+      problem: 'Most fitness applications overwhelm first-time users with cluttered dashboards, microscopic touch targets, and difficult data logging.',
+      solution: 'Formulated user personas and empathy maps; designed rapid wireframes in Balsamiq optimized for one-handed mobile ergonomics. Polished high-fidelity screens in Figma with engaging micro-interactions and strict 48x48px tap accessibility standards.',
       metrics: [
-        { label: 'Time Saved', val: '80%' },
-        { label: 'Framework', val: 'FastAPI / Next.js' },
-        { label: 'Outputs', val: 'SDK & Postman' }
-      ]
-    },
-    {
-      id: 'gov-schemes-bot',
-      name: 'Multilingual Gov Schemes Chatbot',
-      category: 'rag',
-      tagline: 'High-speed retrieval system over 14,624 Indian public policy documents with multilingual NLP reasoning.',
-      status: 'launched',
-      projectType: 'AI Chatbot',
-      featured: false,
-      period: 'Sep 2025 – Nov 2025',
-      techStack: ['Python', 'Flask', 'SQLite', 'JSON', 'RapidFuzz', 'NLP', 'Multilingual'],
-      github: 'https://github.com/Nikynsuresh/Multilingual-Chatbot-for-indian-schemes.git',
-      live: 'https://github.com/Nikynsuresh/Multilingual-Chatbot-for-indian-schemes.git',
-      problem: 'Citizens struggle to discover and navigate state and national welfare schemes due to language barriers, dense bureaucracy, and fragmented data sources.',
-      solution: 'Processed and indexed approximately 14,624 government schemes with RapidFuzz and multilingual NLP, providing conversational access in English, Hindi, Tamil, and Malayalam.',
-      metrics: [
-        { label: 'Schemes Dataset', val: '14,624 Records' },
-        { label: 'Query Latency', val: '< 450ms' },
-        { label: 'Languages', val: '4 Regional' }
+        { label: 'Ease of Use Rating', val: '88%' },
+        { label: 'Touch Standard', val: '48px Tap Targets' },
+        { label: 'Visual Hierarchy', val: 'High-Contrast' }
       ]
     }
   ];
@@ -105,10 +82,10 @@ const Projects = () => {
         >
           <span className="section-eyebrow">Featured Work</span>
           <h2 className="section-title">
-            Featured <span>AI Projects</span>
+            Featured <span>Design Projects</span>
           </h2>
           <p className="section-desc">
-            Production systems, autonomous agentic tools, and vector architectures built from ground up.
+            Interactive web dashboards, multi-tier verification workflows, and mobile applications built with Figma, Balsamiq, and design systems.
           </p>
         </motion.div>
 
@@ -119,21 +96,21 @@ const Projects = () => {
             onClick={() => setActiveFilter('all')}
             data-cursor="pointer"
           >
-            All Systems ({projects.length})
+            All Projects ({projects.length})
           </button>
           <button
-            className={`proj-filter-btn ${activeFilter === 'rag' ? 'active' : ''}`}
-            onClick={() => setActiveFilter('rag')}
+            className={`proj-filter-btn ${activeFilter === 'web' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('web')}
             data-cursor="pointer"
           >
-            RAG & Vector Search
+            Web & Dashboards
           </button>
           <button
-            className={`proj-filter-btn ${activeFilter === 'agentic' ? 'active' : ''}`}
-            onClick={() => setActiveFilter('agentic')}
+            className={`proj-filter-btn ${activeFilter === 'mobile' ? 'active' : ''}`}
+            onClick={() => setActiveFilter('mobile')}
             data-cursor="pointer"
           >
-            Agentic AI & DevTools
+            Mobile Apps
           </button>
         </div>
       </div>
@@ -155,7 +132,7 @@ const Projects = () => {
             <div className="project-card-header">
               <div className="project-badges">
                 <span className={`status-pill status-${project.status}`}>
-                  {project.status === 'launched' ? '● LIVE' : '⚡ IN PROGRESS'}
+                  ● COMPLETED
                 </span>
                 <span className="type-pill">{project.projectType}</span>
               </div>
@@ -175,7 +152,7 @@ const Projects = () => {
 
             <div className="project-card-footer">
               <span className="view-details-cta">
-                View Architecture & Details <ArrowUpRight size={16} />
+                View Design Case Study <ArrowUpRight size={16} />
               </span>
             </div>
           </motion.div>
@@ -205,7 +182,7 @@ const Projects = () => {
               <div className="modal-header">
                 <div className="project-badges">
                   <span className={`status-pill status-${selectedProject.status}`}>
-                    {selectedProject.status === 'launched' ? '● LIVE' : '⚡ IN PROGRESS'}
+                    ● COMPLETED
                   </span>
                   <span className="type-pill">{selectedProject.projectType}</span>
                 </div>
@@ -225,18 +202,18 @@ const Projects = () => {
 
               {/* Problem & Solution */}
               <div className="modal-section">
-                <h4 className="modal-subheading">Challenge & Context</h4>
+                <h4 className="modal-subheading">User Challenge & Friction</h4>
                 <p className="modal-body-text">{selectedProject.problem}</p>
               </div>
 
               <div className="modal-section">
-                <h4 className="modal-subheading">Engineered Solution & Architecture</h4>
+                <h4 className="modal-subheading">Design Process & UX Solution</h4>
                 <p className="modal-body-text">{selectedProject.solution}</p>
               </div>
 
               {/* Tech Stack */}
               <div className="modal-section">
-                <h4 className="modal-subheading">Technologies Used</h4>
+                <h4 className="modal-subheading">Design Tools & Methods</h4>
                 <div className="project-tech-chips">
                   {selectedProject.techStack.map((tech, tIdx) => (
                     <span key={tIdx} className="tech-chip">
@@ -249,21 +226,21 @@ const Projects = () => {
               {/* Action Buttons */}
               <div className="modal-actions">
                 <a
-                  href={selectedProject.github}
+                  href="https://linkedin.com/in/lakshh12"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="btn-modal-primary"
                   data-cursor="pointer"
                 >
-                  <Github size={18} />
-                  <span>View Repository</span>
+                  <Palette size={18} />
+                  <span>Connect on LinkedIn</span>
                 </a>
                 <a
-                  href={`mailto:s.nikyn005@gmail.com?subject=Regarding ${selectedProject.name}`}
+                  href={`mailto:lakshanasaravanan1212@gmail.com?subject=Regarding ${selectedProject.name}`}
                   className="btn-modal-secondary"
                   data-cursor="pointer"
                 >
-                  <span>Discuss Project</span>
+                  <span>Discuss Case Study</span>
                   <ArrowUpRight size={16} />
                 </a>
               </div>

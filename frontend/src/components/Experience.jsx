@@ -1,45 +1,54 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { GraduationCap, Code2, Award, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
+import { GraduationCap, Palette, Award, Calendar, MapPin, CheckCircle2 } from 'lucide-react';
 import './Experience.css';
 
 const Experience = () => {
   const experiences = [
     {
-      role: 'B.Tech in Artificial Intelligence & Data Science',
+      role: 'UI/UX Designer (Freelance Project)',
+      organization: 'Intelle Power Automation and Private Limited',
+      period: 'Oct 2024 — Dec 2024',
+      location: 'Coimbatore, India',
+      tag: 'UI/UX Design',
+      grade: 'Corporate Web Redesign',
+      description: 'Led end-to-end user experience and interface redesign for corporate web platform. Gathered stakeholder requirements, mapped information architecture, produced low-fidelity wireframes in Balsamiq, and engineered comprehensive Figma prototypes. Created branded vector assets and collaborated with engineering to troubleshoot layout defects.'
+    },
+    {
+      role: 'Visual & Graphic Designer (Freelance / Project-Based)',
+      organization: 'Intelle Power System',
+      period: 'Jul 2024 — Sep 2024',
+      location: 'Coimbatore, India',
+      tag: 'Brand Design',
+      grade: 'Marketing Collaterals',
+      description: 'Designed corporate invitation cards, event celebration collaterals, and digital marketing assets aligned with corporate branding. Leveraged Adobe Photoshop, Adobe Illustrator, and Canva with strict typographic hierarchy and color harmony.'
+    },
+    {
+      role: 'Multimedia & Content Designer (Freelance / Project-Based)',
+      organization: 'Code Core',
+      period: 'Feb 2024 — May 2024',
+      location: 'Remote / Hybrid',
+      tag: 'Motion & Media',
+      grade: 'Social Video Campaigns',
+      description: 'Edited promotional marketing videos, implementing transitions, kinetic typography, and audio mastering to enhance audience engagement. Participated in weekly creative brainstorming sessions with team leads to deliver brand-consistent multimedia content.'
+    },
+    {
+      role: 'B.E. in Electrical and Electronics Engineering',
       organization: 'Sri Shakthi Institute of Engineering and Technology',
-      period: 'Sep 2023 — Present',
+      period: '2023 — 2027',
       location: 'Coimbatore, Tamil Nadu',
-      tag: 'Academic Degree',
-      grade: 'CGPA: 7.56 / 10.00',
-      description: 'Specializing in Generative AI architectures, vector databases, and machine learning pipelines. Gained hands-on experience designing RAG systems, building neural network architectures, and developing full-stack AI applications.'
+      tag: 'Undergraduate Degree',
+      grade: 'CGPA: 7.9 / 10.0',
+      description: 'Undergraduate engineering studies developing strong problem-solving fundamentals, human-computer interaction principles, and analytical thinking applied to digital interface design.'
     },
     {
-      role: 'Machine Learning Engineer Intern',
-      organization: 'CodSoft Technologies',
-      period: 'Oct 2023 — Nov 2023',
-      location: 'Remote',
-      tag: 'Industry Internship',
-      grade: 'Hands-on ML Engineering',
-      description: 'Acquired practical exposure to machine-learning model workflows, data exploration, predictive modeling, and feature engineering on real-world datasets.'
-    },
-    {
-      role: 'Algorithmic Problem Solver (270+ Solved)',
-      organization: 'LeetCode & Competitive Coding',
-      period: '2024 — Present',
-      location: 'Global Platform',
-      tag: 'Algorithms & DSA',
-      grade: 'Top Percentile Problem Solver',
-      description: 'Consistently practicing and solving 270+ complex Data Structures and Algorithms problems. Strong mastery of Dynamic Programming, Graph Traversal, Binary Trees, and time-space complexity optimization.'
-    },
-    {
-      role: 'Higher Secondary Certificate (CS & Mathematics)',
-      organization: 'GKD Matriculation Higher Secondary School',
-      period: '2021 — 2023',
+      role: 'Higher Secondary Certificate (HSC) & SSLC',
+      organization: 'Sri Chaitanya Techno School',
+      period: '2020 — 2023',
       location: 'Coimbatore, Tamil Nadu',
       tag: 'Foundations',
-      grade: 'Score: 72.5%',
-      description: 'Completed higher secondary schooling with major focus in Computer Science and Mathematics, laying the core mathematical foundations in calculus, probability, and procedural programming.'
+      grade: 'SSLC: 92.4% | HSC: 65%',
+      description: 'Completed secondary and higher secondary education with distinction in fundamental sciences, logical problem solving, and design thinking.'
     }
   ];
 
@@ -52,7 +61,7 @@ const Experience = () => {
         transition={{ duration: 0.8 }}
         className="career-header"
       >
-        <span className="section-eyebrow">Milestones</span>
+        <span className="section-eyebrow">Milestones & Career</span>
         <h2 className="career-title">
           My journey <span>&</span>
           <br />

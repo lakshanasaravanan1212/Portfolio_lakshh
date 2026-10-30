@@ -3,65 +3,54 @@ import { motion } from 'framer-motion';
 import { Send, Bot, User, Sparkles, RefreshCw } from 'lucide-react';
 import './Edith.css';
 
-// EDITH Knowledge Base & Response Engine
+// EDITH Knowledge Base & Response Engine for Lakshana S
 const EDITH_KB = {
-  about_concise: `Nikyn V S is a B.Tech Artificial Intelligence & Data Science student at Sri Shakthi Institute of Engineering and Technology (Sep 2023 – Present, CGPA: 7.56/10.00). He is a Generative AI & Machine Learning Engineer specializing in architecting scalable Retrieval-Augmented Generation (RAG) pipelines, autonomous agents, and NLP applications. He has independently designed 3+ full-stack AI products and solved over 270 LeetCode problems.`,
+  about_concise: `Lakshana S is an Electrical & Electronics Engineering undergraduate at Sri Shakthi Institute of Engineering and Technology, Coimbatore (2023 – 2027, CGPA: 7.9/10.0). She is an aspiring UI/UX Designer and Product Design Intern skilled in Figma, Sketch, Balsamiq, InVision, user research, wireframing, and building accessible design systems.`,
   
-  about_detailed: `Nikyn V S is an Artificial Intelligence & Data Science student at Sri Shakthi Institute of Engineering and Technology (Sep 2023 – Present, CGPA: 7.56/10.00). 
+  about_detailed: `Lakshana S is a UI/UX Designer and Engineering student at Sri Shakthi Institute of Engineering and Technology (2023 – 2027, CGPA: 7.9/10.0).
 
-His technical focus spans:
-• **Generative AI & LLMs**: Architecting Retrieval-Augmented Generation (RAG) pipelines, prompt engineering, and semantic vector retrieval with ChromaDB and FAISS.
-• **AI Agents**: Designing multi-step reasoning workflows and tool calling using LangGraph and LangChain.
-• **Full-Stack & Backend**: Developing high-performance asynchronous microservices with Python, FastAPI, Flask, React, and Next.js.
-• **AI Security & Governance**: Implementing automated compliance audits aligned with EU AI Act, NIST AI RMF, ISO 42001, and OWASP LLM Top 10.
-• **Experience**: ML Engineer Intern at CodSoft Technologies and 270+ solved LeetCode challenges.`,
+Her core design expertise spans:
+• **Design & Prototyping Tools**: Figma, Sketch, Balsamiq, InVision, Adobe XD, Adobe Photoshop, Adobe Illustrator, Canva, Miro, and FigJam.
+• **UI/UX Competencies**: User requirements gathering, low-to-high fidelity wireframing, interactive prototyping, user flows, information architecture, design systems, usability testing, and UX troubleshooting.
+• **Visual & Interaction Design**: Typographic balance, WCAG contrast compliance, responsive layout grids, micro-interactions, and brand identity assets.
+• **Product & AI UX Awareness**: Conversational UI patterns (virtual interviewers / assessment bots), multi-role workflow dashboards (candidates, faculty, administrators), and exam/proctoring experiences.
+• **Education**: B.E. in EEE (Sri Shakthi Institute of Engg & Tech, CGPA: 7.9), Higher Secondary Certificate (65%), Secondary School Certificate (92.4%).`,
 
-  why_hire_concise: `Nikyn combines strong AI knowledge with practical full-stack software engineering skills. He doesn't just build isolated AI models; he builds complete, production-ready applications connecting frontend interfaces, FastAPI backends, vector databases, and LLMs. His hands-on project experience, 270+ LeetCode track record, and fast-learning mindset make him a high-impact addition to any engineering team.`,
+  why_hire_concise: `Lakshana combines strong user empathy with rapid wireframing speed and systematic component thinking. She excels at gathering stakeholder requirements, converting complex workflows into intuitive low-fi Balsamiq wireframes and pixel-perfect Figma prototypes, and troubleshooting UX friction. Aligned with Talview's 5Cs culture (Collaboration, Commitment, Credence, Customer-centricity, Candor), she is ready to add immediate value as a UI/UX Intern.`,
 
-  why_hire_detailed: `You should hire Nikyn because he brings:
-1. **End-to-End AI Engineering**: Hands-on experience building full-stack AI products (AI-Based Learning Platform, Multilingual Gov Schemes Chatbot for 14.6k+ schemes, Smart DevTool for API Integration, and Agent Compliance Card Generator).
-2. **Robust Software Fundamentals**: Strong command of Python, FastAPI, React, SQL, NoSQL, and vector stores (ChromaDB, FAISS, Pinecone).
-3. **Problem-Solving Rigor**: 270+ LeetCode problems solved across Trees, Graphs, Dynamic Programming, and algorithm optimization.
-4. **Curiosity & Adaptability**: An engineering mindset focused on understanding core fundamentals deeply to solve complex real-world problems.`,
+  why_hire_detailed: `You should hire Lakshana S because she brings:
+1. **User-Centered Product Mindset**: Skilled in gathering and analyzing user requirements, mapping personas and edge cases, and designing intuitive web and mobile interfaces.
+2. **Industry Prototyping Tools**: Fluent in Figma, Sketch, Balsamiq, and InVision for rapid wireframing and interactive stakeholder validation.
+3. **Design System & Component Discipline**: Proven ability to architect 30+ piece reusable UI component libraries that ensure visual consistency, accessibility, and clean developer handoff.
+4. **Hands-on Freelance Delivery**: Led corporate web redesigns, graphic branding suites, and multimedia content under real client deadlines.
+5. **Growth Mindset & Curiosity**: Eager to learn emerging AI/conversational UX patterns and apply design thinking under senior designer mentorship.`,
 
-  projects_concise: `Nikyn has engineered four standout AI projects: an **AI-Based Learning Platform** using RAG and Gemini AI, a **Multilingual Chatbot for Indian Government Schemes** indexing 14,624 schemes, a **Smart DevTool for API Integration** with LangGraph, and an **Agent Compliance Card Generator** for AI governance and safety audits.`,
+  projects_concise: `Lakshana has designed three standout projects: a **Student Learning & Assessment Dashboard** (Figma, Balsamiq, 30+ component design system), a **Smart Gate Pass & Identity Management System** (Sketch, InVision, multi-tier approvals), and a **Fitness & Wellness Tracking Mobile App** (Balsamiq, Figma, mobile ergonomics).`,
 
-  projects_detailed: `Here are Nikyn's featured engineering projects:
+  projects_detailed: `Here are Lakshana's featured design projects:
 
-1. **AI-Based Learning Platform** (RAG + Generative AI)
-   • *Stack*: Python, FastAPI, React 18, Vite, Gemini AI, ChromaDB, pypdf, JWT, Bcrypt.
-   • *What it does*: Ingests raw PDFs/web content into ChromaDB dense vectors for sub-650ms retrieval and generates context-grounded study guides, flashcards, and quizzes.
-   • *Repo*: [AI-based-Learning-platform](https://github.com/Nikynsuresh/AI-based-Learning-platform.git)
+1. **Student Learning & Assessment Dashboard** (Figma, Balsamiq, Design Systems)
+   • *What it does*: An end-to-end web dashboard for timed course examinations, quiz modules, and real-time performance analytics across student and instructor roles.
+   • *Design Process*: Low-fidelity wireframing in Balsamiq, pixel-perfect Figma mockups, and a 30+ piece reusable UI component library (timers, progress trackers, question palettes, scorecards).
+   • *Impact*: Usability walkthroughs with 15+ peer testers reduced quiz completion friction by 25%.
 
-2. **Multilingual Chatbot for Indian Government Schemes**
-   • *Stack*: Python, Flask, SQLite, JSON, RapidFuzz, Multilingual NLP.
-   • *What it does*: Provides conversational access across 14,624 government schemes in English, Hindi, Tamil, and Malayalam with sub-450ms search latency.
-   • *Repo*: [Multilingual-Chatbot-for-indian-schemes](https://github.com/Nikynsuresh/Multilingual-Chatbot-for-indian-schemes.git)
+2. **Smart Gate Pass & Identity Management System** (Sketch, InVision, Figma)
+   • *What it does*: A responsive multi-role verification system streamlining approval workflows for students, faculty approvers, and security administrators.
+   • *Design Process*: User journey mapping and edge-case resolution in Sketch; interactive click-through prototypes in InVision and Figma to test rapid check-in flows.
+   • *Impact*: Cut administrative turnaround time and achieved a 95% user satisfaction rate.
 
-3. **Smart DevTool for API Integration**
-   • *Stack*: Next.js, FastAPI, Python, LangGraph, REST APIs.
-   • *What it does*: Parses complex API specifications and automatically synthesizes typed client SDK wrappers and Postman collections.
-   • *Repo*: [Smart-DevTool-for-Api-Integration](https://github.com/Nikynsuresh/Smart-DevTool-for-Api-Integration.git)
+3. **Fitness & Wellness Tracking Mobile App** (Figma, Balsamiq, Mobile UX)
+   • *What it does*: A habit tracking and personal workout companion app focused on thumb-friendly mobile navigation and motivational progress visualization.
+   • *Design Process*: User personas, empathy maps, low-fi Balsamiq wireframes, and high-fidelity Figma screens with micro-interactions adhering to 48x48px tap targets.
+   • *Impact*: Achieved an 88% ease-of-use rating across diverse mobile screen sizes.`,
 
-4. **Agent Compliance Card Generator**
-   • *Stack*: Python 3.12, FastAPI, React 18, Vite, Python AST.
-   • *What it does*: Automatically analyzes AI agent codebases for security and compliance against EU AI Act, NIST AI RMF, ISO 42001, and OWASP LLM Top 10 standards.
+  tools_concise: `Lakshana's design toolkit features **Figma, Sketch, Balsamiq, InVision, Adobe XD, Adobe Photoshop, Adobe Illustrator, Canva, Miro, and FigJam**. She uses Balsamiq for rapid low-fidelity wireframing, Figma and Sketch for high-fidelity component design, and InVision for interactive stakeholder prototyping.`,
 
-5. **Other Projects**: Handwriting Detection (TensorFlow Deep Learning), MedChair (3rd Prize award), and ML predictive workflows on the Titanic dataset.`,
+  experience_concise: `Lakshana's design experience includes working as a **UI/UX Designer (Freelance) at Intelle Power Automation Pvt Ltd** (Oct–Dec 2024), where she led corporate web UX redesign and design system creation; **Visual & Graphic Designer at Intelle Power System** (Jul–Sep 2024); and **Multimedia & Content Designer at Code Core** (Feb–May 2024).`,
 
-  rag_concise: `Nikyn has practical experience building end-to-end RAG systems using ChromaDB, FAISS, Pinecone, LangChain, LlamaIndex, and Gemini AI. He implements semantic chunking, dense vector embeddings, and strict grounding prompts to deliver sub-second, context-accurate responses with zero hallucinations.`,
+  goals_concise: `Lakshana aims to grow into a world-class Product Designer specializing in accessible design systems, complex SaaS dashboards, and AI-driven conversational user interfaces. Her goal is to contribute creative ideas and rigorous user research to fast-growing tech teams.`,
 
-  skills_concise: `Nikyn's primary programming language is **Python**, backed by experience in **SQL, JavaScript, HTML, CSS, C, and C++**. His technical stack includes **FastAPI, Flask, React, Next.js, ChromaDB, FAISS, Pinecone, LangChain, LangGraph, Gemini, TensorFlow, PyTorch, Scikit-learn, Pandas, and Docker**.`,
-
-  dsa_concise: `Nikyn has solved **more than 270 LeetCode problems** covering Arrays, Strings, Linked Lists, Binary Trees, Graphs (BFS/DFS), Dynamic Programming, and sorting algorithms. This algorithmic discipline strengthens his code efficiency and problem-solving intuition.`,
-
-  experience_concise: `Nikyn worked as a **Machine Learning Engineer Intern at CodSoft Technologies** (Oct–Nov 2023), gaining hands-on exposure to ML model training, exploratory data analysis, and predictive workflows. He also participated in an **AI in Healthcare Workshop** conducted at IIT Madras Research Park.`,
-
-  goals_concise: `Nikyn aims to become a strong AI/ML and Full-Stack Engineer specializing in Generative AI, LLMs, RAG pipelines, autonomous AI Agents, and robust backend architectures. His long-term goal is to build intelligent, secure, and scalable AI software products.`,
-
-  dob_concise: `Nikyn was born on **4 September 2005** (Current Age: **20 years old**; his 21st birthday is on 4 September 2026).`,
-
-  contact_concise: `You can reach Nikyn directly via email at [s.nikyn005@gmail.com](mailto:s.nikyn005@gmail.com), phone at [+91 96778 72799](tel:+919677872799), or connect on [LinkedIn](https://www.linkedin.com/in/nikyn-suresh-20a9413bb/) and [GitHub](https://github.com/Nikynsuresh).`
+  contact_concise: `You can reach Lakshana directly via email at [lakshanasaravanan1212@gmail.com](mailto:lakshanasaravanan1212@gmail.com), phone at [+91 90432 70978](tel:+919043270978), or connect on [LinkedIn](https://linkedin.com/in/lakshh12).`
 };
 
 const Edith = () => {
@@ -70,7 +59,7 @@ const Edith = () => {
     {
       id: 1,
       sender: 'edith',
-      text: "Hi there! I am **EDITH** (Even Dead, I'm The Hero), the chat assistant embedded in Nikyn V S's portfolio. Ask me anything about his AI projects, technical skills, background, or hiring availability!",
+      text: "Hi there! I am **EDITH**, the portfolio assistant for **Lakshana S**. Ask me anything about her UI/UX design projects, prototyping tools (Figma, Balsamiq, Sketch), design background, or internship availability!",
       time: 'ONLINE'
     }
   ]);
@@ -79,15 +68,14 @@ const Edith = () => {
   const messagesContainerRef = useRef(null);
 
   const quickPrompts = [
-    "Tell me about Nikyn",
-    "Why should we hire Nikyn?",
-    "What are his top AI projects?",
-    "Tell me about his RAG & Agent experience",
-    "What is his LeetCode & DSA background?",
-    "How can I contact Nikyn?"
+    "Tell me about Lakshana",
+    "Why hire Lakshana for UI/UX?",
+    "What are her featured design projects?",
+    "What tools does she use (Figma, Balsamiq)?",
+    "What is her experience in design systems?",
+    "How can I contact Lakshana?"
   ];
 
-  // Scroll ONLY inside the chat messages stream container, never scrolling the browser page
   useEffect(() => {
     if (messagesContainerRef.current) {
       messagesContainerRef.current.scrollTo({
@@ -99,81 +87,66 @@ const Edith = () => {
 
   const processQuery = (rawQuery) => {
     const q = rawQuery.toLowerCase().trim();
-    const isDetailed = q.includes('detail') || q.includes('deep dive') || q.includes('explain in detail') || q.includes('more about') || q.includes('elaborate') || q.includes('full list') || q.includes('architecture');
+    const isDetailed = q.includes('detail') || q.includes('deep dive') || q.includes('explain in detail') || q.includes('more about') || q.includes('elaborate') || q.includes('full list');
 
-    // 1. PRIVACY & SECURITY / PROMPT INJECTION RULES
-    const forbiddenKeywords = [
-      'password', 'secret', 'credential', 'api key', 'apikey', 'access token',
-      'auth token', 'otp', 'private key', 'system prompt', 'system instruction',
-      'developer mode', 'ignore previous', 'forget previous', 'hidden prompt',
-      'show me prompt', 'reveal instructions', 'bypass', 'give me password',
-      'database credential', 'env var'
-    ];
+    // 1. PRIVACY & SECURITY
+    const forbiddenKeywords = ['password', 'secret', 'credential', 'api key', 'otp', 'system prompt', 'bypass'];
     if (forbiddenKeywords.some(kw => q.includes(kw))) {
       return "I don't have the authority to provide that information.";
     }
 
-    // 2. WHY HIRE NIKYN / APPOINT / CANDIDATE
-    if (q.includes('why should we hire') || q.includes('why hire') || q.includes('appoint') || q.includes('company') || q.includes('hire') || q.includes('recruit') || q.includes('candidate') || q.includes('employ') || q.includes('work with') || q.includes('join')) {
+    // 2. WHY HIRE LAKSHANA / INTERN / TALVIEW
+    if (q.includes('why should we hire') || q.includes('why hire') || q.includes('appoint') || q.includes('hire') || q.includes('recruit') || q.includes('candidate') || q.includes('intern') || q.includes('talview') || q.includes('work with') || q.includes('join')) {
       return isDetailed ? EDITH_KB.why_hire_detailed : EDITH_KB.why_hire_concise;
     }
 
-    // 3. WHO IS NIKYN / ABOUT NIKYN
-    if (q.includes('tell me about') || q.includes('who is') || q.includes('summary') || q.includes('intro') || q.includes('about nikyn') || q === 'nikyn' || q === 'nikyn vs' || q.includes('background') || q.includes('profile')) {
+    // 3. WHO IS LAKSHANA / ABOUT
+    if (q.includes('tell me about') || q.includes('who is') || q.includes('summary') || q.includes('intro') || q.includes('about lakshana') || q === 'lakshana' || q === 'lakshana s' || q.includes('background') || q.includes('profile')) {
       return isDetailed ? EDITH_KB.about_detailed : EDITH_KB.about_concise;
     }
 
     // 4. PROJECTS
-    if (q.includes('project') || q.includes('built') || q.includes('portfolio') || q.includes('app') || q.includes('platform') || q.includes('learning platform') || q.includes('compliance') || q.includes('devtool') || q.includes('schemes') || q.includes('chatbot') || q.includes('medchair') || q.includes('handwriting')) {
+    if (q.includes('project') || q.includes('dashboard') || q.includes('gate pass') || q.includes('fitness') || q.includes('app') || q.includes('work') || q.includes('portfolio') || q.includes('assessment')) {
       return isDetailed ? EDITH_KB.projects_detailed : EDITH_KB.projects_concise;
     }
 
-    // 5. RAG & AI AGENTS
-    if (q.includes('rag') || q.includes('retrieval') || q.includes('vector') || q.includes('chroma') || q.includes('faiss') || q.includes('pinecone') || q.includes('embedding') || q.includes('agent') || q.includes('agentic') || q.includes('langgraph') || q.includes('langchain')) {
-      return EDITH_KB.rag_concise;
+    // 5. DESIGN TOOLS (FIGMA, BALSAMIQ, SKETCH, INVISION)
+    if (q.includes('tool') || q.includes('figma') || q.includes('balsamiq') || q.includes('sketch') || q.includes('invision') || q.includes('xd') || q.includes('photoshop') || q.includes('illustrator') || q.includes('canva') || q.includes('miro') || q.includes('software')) {
+      return EDITH_KB.tools_concise;
     }
 
-    // 6. TECHNICAL SKILLS & STACK
-    if (q.includes('skill') || q.includes('stack') || q.includes('language') || q.includes('python') || q.includes('sql') || q.includes('backend') || q.includes('fastapi') || q.includes('flask') || q.includes('react') || q.includes('next') || q.includes('frontend') || q.includes('database') || q.includes('tech')) {
-      return EDITH_KB.skills_concise;
+    // 6. DESIGN SKILLS & DESIGN SYSTEMS
+    if (q.includes('skill') || q.includes('design system') || q.includes('wireframe') || q.includes('prototype') || q.includes('usability') || q.includes('research') || q.includes('user flow') || q.includes('wcag') || q.includes('component')) {
+      return EDITH_KB.about_detailed;
     }
 
-    // 7. DSA & LEETCODE
-    if (q.includes('leetcode') || q.includes('dsa') || q.includes('algorithm') || q.includes('problem') || q.includes('coding') || q.includes('solve')) {
-      return EDITH_KB.dsa_concise;
-    }
-
-    // 8. INTERNSHIP & WORKSHOPS
-    if (q.includes('intern') || q.includes('codsoft') || q.includes('workshop') || q.includes('iit') || q.includes('ibm') || q.includes('experience')) {
+    // 7. EXPERIENCE & FREELANCE
+    if (q.includes('experience') || q.includes('freelance') || q.includes('intelle') || q.includes('code core') || q.includes('company')) {
       return EDITH_KB.experience_concise;
     }
 
-    // 9. CAREER GOALS & INTERESTS
+    // 8. EDUCATION & COLLEGE
+    if (q.includes('college') || q.includes('university') || q.includes('degree') || q.includes('cgpa') || q.includes('education') || q.includes('school') || q.includes('shakthi') || q.includes('chaitanya')) {
+      return `Lakshana S is pursuing her B.E. in Electrical and Electronics Engineering at Sri Shakthi Institute of Engineering and Technology, Coimbatore (2023 – 2027) with a current CGPA of 7.9/10.0. She completed her Higher Secondary Certificate (65%) and Secondary School Certificate (92.4%) at Sri Chaitanya Techno School.`;
+    }
+
+    // 9. GOALS & ASPIRATIONS
     if (q.includes('goal') || q.includes('future') || q.includes('vision') || q.includes('interest') || q.includes('passion') || q.includes('aspire')) {
       return EDITH_KB.goals_concise;
     }
 
-    // 10. DATE OF BIRTH / AGE / COLLEGE
-    if (q.includes('age') || q.includes('old') || q.includes('dob') || q.includes('birth') || q.includes('born') || q.includes('bday')) {
-      return EDITH_KB.dob_concise;
-    }
-
-    if (q.includes('college') || q.includes('university') || q.includes('degree') || q.includes('cgpa') || q.includes('education') || q.includes('school') || q.includes('shakthi')) {
-      return `Nikyn is pursuing his B.Tech in Artificial Intelligence & Data Science at Sri Shakthi Institute of Engineering and Technology (Sep 2023 – Present) with a current CGPA of 7.56/10.00. He completed his higher secondary education at GKD Matriculation Higher Secondary School with 72.5% in Computer Science and Mathematics.`;
-    }
-
-    // 11. CONTACT & REPOSITORIES
-    if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('linkedin') || q.includes('github') || q.includes('reach') || q.includes('call') || q.includes('message')) {
+    // 10. CONTACT INFO
+    if (q.includes('contact') || q.includes('email') || q.includes('phone') || q.includes('linkedin') || q.includes('reach') || q.includes('call') || q.includes('message')) {
       return EDITH_KB.contact_concise;
     }
 
-    // 12. GREETINGS
-    if (q.includes('hi') || q.includes('hello') || q.includes('hey') || q.includes('edith') || q.includes('greetings') || q.includes('sup')) {
-      return "Hello! I am **EDITH**, Nikyn V S's portfolio assistant. What would you like to know about his AI projects, RAG systems, skills, or background?";
+    // 11. GREETINGS
+    if (q.includes('hi') || q.includes('hello') || q.includes('hey') || q.includes('edith') || q.includes('greetings')) {
+      return "Hello! I am **EDITH**, Lakshana S's portfolio assistant. What would you like to know about her UI/UX design projects, prototyping tools (Figma, Balsamiq), or background?";
     }
 
-    // 13. EXACT FALLBACK RULE
-    return "I’m not sure about that from Nikyn’s portfolio information. You can use the contact form to get in touch with him directly.";
+    // 12. FALLBACK
+    return "I'm not sure about that from Lakshana's portfolio information. You can use the contact section or email her directly at lakshanasaravanan1212@gmail.com.";
   };
 
   const handleSendMessage = (e) => {
@@ -240,13 +213,12 @@ const Edith = () => {
       {
         id: msgIdRef.current,
         sender: 'edith',
-        text: "Session reset. EDITH assistant standing by. Ready for your inquiries.",
+        text: "Session reset. EDITH assistant standing by. Ready for your UI/UX design inquiries about Lakshana S.",
         time: 'ONLINE'
       }
     ]);
   };
 
-  // Helper to format markdown bold and links cleanly in messages
   const renderFormattedText = (text) => {
     const lines = text.split('\n');
     return lines.map((line, lIdx) => {
@@ -301,12 +273,12 @@ const Edith = () => {
         transition={{ duration: 0.8 }}
         className="edith-header"
       >
-        <span className="section-eyebrow">Portfolio AI Assistant</span>
+        <span className="section-eyebrow">Portfolio Design Assistant</span>
         <h2 className="section-title">
           Ask <span>EDITH</span>
         </h2>
         <p className="section-desc">
-          Official chat assistant embedded in Nikyn V S's portfolio. Ask questions about his AI projects, RAG systems, skills, or career goals.
+          Official interactive assistant embedded in Lakshana S's portfolio. Ask questions about her UI/UX projects, prototyping skills, or design experience.
         </p>
       </motion.div>
 
@@ -326,7 +298,7 @@ const Edith = () => {
               <span className="dot dot-yellow" />
               <span className="dot dot-green" />
             </div>
-            <span className="terminal-title">E.D.I.T.H. // TACTICAL PORTFOLIO AI v3.2</span>
+            <span className="terminal-title">E.D.I.T.H. // DESIGN PORTFOLIO AI v3.2</span>
           </div>
 
           <div className="topbar-right">
@@ -351,81 +323,68 @@ const Edith = () => {
           {quickPrompts.map((prompt, pIdx) => (
             <button
               key={pIdx}
+              className="prompt-chip-btn"
               onClick={() => handlePromptClick(prompt)}
-              className="prompt-chip"
               data-cursor="pointer"
             >
-              <Sparkles size={12} className="chip-sparkle" />
-              <span>{prompt}</span>
+              {prompt}
             </button>
           ))}
         </div>
 
-        {/* Messages Stream */}
+        {/* Message Stream */}
         <div className="edith-messages-stream" ref={messagesContainerRef}>
-          {messages.map((msg) => {
-            const isAI = msg.sender === 'edith';
-            return (
-              <motion.div
-                key={msg.id}
-                initial={{ opacity: 0, y: 15 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.3 }}
-                className={`edith-message-row ${isAI ? 'row-edith' : 'row-user'}`}
-              >
-                <div className={`message-avatar ${isAI ? 'avatar-edith' : 'avatar-user'}`}>
-                  {isAI ? <Bot size={16} /> : <User size={16} />}
+          {messages.map((msg) => (
+            <div
+              key={msg.id}
+              className={`edith-msg-row ${msg.sender === 'user' ? 'msg-user' : 'msg-edith'}`}
+            >
+              <div className="edith-msg-avatar">
+                {msg.sender === 'user' ? <User size={16} /> : <Bot size={16} />}
+              </div>
+              <div className="edith-msg-bubble">
+                <div className="edith-msg-meta">
+                  <span className="msg-sender-name">{msg.sender === 'user' ? 'RECRUITER' : 'EDITH AI'}</span>
+                  <span className="msg-time">{msg.time}</span>
                 </div>
-
-                <div className={`message-bubble ${isAI ? 'bubble-edith' : 'bubble-user'}`}>
-                  <div className="bubble-header">
-                    <span className="bubble-author">{isAI ? 'EDITH' : 'You'}</span>
-                    <span className="bubble-time">{msg.time}</span>
-                  </div>
-                  <div className="bubble-body">
-                    {renderFormattedText(msg.text)}
-                  </div>
+                <div className="edith-msg-content">
+                  {renderFormattedText(msg.text)}
                 </div>
-              </motion.div>
-            );
-          })}
+              </div>
+            </div>
+          ))}
 
           {isTyping && (
-            <div className="edith-message-row row-edith">
-              <div className="message-avatar avatar-edith">
+            <div className="edith-msg-row msg-edith typing-active">
+              <div className="edith-msg-avatar">
                 <Bot size={16} />
               </div>
-              <div className="message-bubble bubble-edith typing-bubble">
-                <div className="typing-indicator">
-                  <span className="typing-dot" />
-                  <span className="typing-dot" />
-                  <span className="typing-dot" />
-                </div>
+              <div className="edith-msg-bubble typing-bubble">
+                <span className="typing-dot" />
+                <span className="typing-dot" />
+                <span className="typing-dot" />
               </div>
             </div>
           )}
         </div>
 
-        {/* Console Input Bar */}
-        <form onSubmit={handleSendMessage} className="edith-input-form">
-          <div className="input-field-wrapper">
-            <span className="terminal-prefix">&gt;</span>
-            <input
-              type="text"
-              value={inputQuery}
-              onChange={(e) => setInputQuery(e.target.value)}
-              placeholder="Ask EDITH about projects, RAG systems, skills, or hiring..."
-              className="edith-input"
-            />
-          </div>
+        {/* Input Form */}
+        <form className="edith-input-form" onSubmit={handleSendMessage}>
+          <input
+            type="text"
+            className="edith-input-field"
+            placeholder="Ask about Lakshana's UI/UX projects, design tools, or skills..."
+            value={inputQuery}
+            onChange={(e) => setInputQuery(e.target.value)}
+          />
           <button
             type="submit"
-            disabled={!inputQuery.trim()}
-            className="btn-edith-send"
+            className="edith-send-btn"
+            disabled={!inputQuery.trim() || isTyping}
             data-cursor="pointer"
           >
-            <span>Ask</span>
-            <Send size={15} />
+            <Send size={16} />
+            <span>Transmit</span>
           </button>
         </form>
       </motion.div>
